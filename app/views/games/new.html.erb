@@ -4,28 +4,28 @@
     <%= f.hidden_field :name %>
     <p class="lead">Player One</p>
     <p class="lead">
-      <%= fields_for :player_one do |player_one| %>
+      <%= f.fields_for :player_one, @game.player_one do |player_one| %>
         <div class="form-group">
           <%= player_one.label :name %>
           <%= player_one.text_field :name, class: "form-control", placeholder: "Player One" %>
         </div>
         <div class="form-group">
-          <%= player_one.label :type %>
-          <%= player_one.select :type,
+          <%= player_one.label :player_type %>
+          <%= player_one.select :player_type,
             [["Student", "student"], ["Tutor", "tutor"]], class: "form-control" %>
         </div>
       <% end %>
     </p>
     <p class="lead">Player Two</p>
     <p class="lead">
-      <%= fields_for :player_two do |player_two| %>
+      <%= f.fields_for :player_two, @game.player_two do |player_two| %>
         <div class="form-group">
           <%= player_two.label :name %>
           <%= player_two.text_field :name, class: "form-control", placeholder: "Player One" %>
         </div>
         <div class="form-group">
-          <%= player_two.label :type %>
-          <%= player_two.select :type,
+          <%= player_two.label :player_type %>
+          <%= player_two.select :player_type,
             [["Student", "student"], ["Tutor", "tutor"]], class: "form-control" %>
         </div>
       <% end %>

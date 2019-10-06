@@ -29,13 +29,16 @@ class GamesController < ApplicationController
   # POST /games
   # POST /games.json
   def create
+    Rails.logger.debug game_params.inspect
     @game = Game.new(game_params)
 
     respond_to do |format|
       if @game.save
+        Rails.logger.debug "SAVE"
         format.html { redirect_to @game, notice: 'Game was successfully created.' }
         format.json { render :show, status: :created, location: @game }
       else
+        Rails.logger.debug "NOT SAVE: #{@game.errors.full_messages.inspect}"
         format.html { render :new }
         format.json { render json: @game.errors, status: :unprocessable_entity }
       end
