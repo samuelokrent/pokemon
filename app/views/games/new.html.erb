@@ -1,5 +1,35 @@
-<h1>New Game</h1>
-
-<%= render 'form', game: @game %>
-
-<%= link_to 'Back', games_path %>
+<div class="jumbotron">
+  <h1 class="display-4">New Game: <%= @game.name %></h1>
+  <%= form_with model: @game, method: "post", url: games_path do |f| %>
+    <%= f.hidden_field :name %>
+    <p class="lead">Player One</p>
+    <p class="lead">
+      <%= fields_for :player_one do |player_one| %>
+        <div class="form-group">
+          <%= player_one.label :name %>
+          <%= player_one.text_field :name, class: "form-control", placeholder: "Player One" %>
+        </div>
+        <div class="form-group">
+          <%= player_one.label :type %>
+          <%= player_one.select :type,
+            [["Student", "student"], ["Tutor", "tutor"]], class: "form-control" %>
+        </div>
+      <% end %>
+    </p>
+    <p class="lead">Player Two</p>
+    <p class="lead">
+      <%= fields_for :player_two do |player_two| %>
+        <div class="form-group">
+          <%= player_two.label :name %>
+          <%= player_two.text_field :name, class: "form-control", placeholder: "Player One" %>
+        </div>
+        <div class="form-group">
+          <%= player_two.label :type %>
+          <%= player_two.select :type,
+            [["Student", "student"], ["Tutor", "tutor"]], class: "form-control" %>
+        </div>
+      <% end %>
+    </p>
+    <%= f.submit "Start Game" %>
+  <% end %>
+</div>

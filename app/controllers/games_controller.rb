@@ -17,7 +17,9 @@ class GamesController < ApplicationController
 
   # GET /games/new
   def new
-    @game = Game.new
+    @game = Game.new(name: params[:name])
+    @game.build_player_one
+    @game.build_player_two
   end
 
   # GET /games/1/edit
@@ -72,6 +74,9 @@ class GamesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def game_params
-      params.fetch(:game, {})
+      params.require(:game).permit(
+        :name,
+        player_one_attributes: [:name, :type],
+        player_one_attributes: [:name, :type])
     end
 end
