@@ -79,7 +79,7 @@ class GamesController < ApplicationController
     def game_params
       params.require(:game).permit(
         :name,
-        player_one_attributes: [:name, :type],
-        player_one_attributes: [:name, :type])
+        player_one_attributes: [:name, :player_type],
+        player_two_attributes: [:name, :player_type])
     end
 end
