@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :games do
     member do
       get 'pick_deck'
+      get 'choose'
     end
   end
 
