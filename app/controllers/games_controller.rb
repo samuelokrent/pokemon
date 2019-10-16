@@ -47,6 +47,13 @@ class GamesController < ApplicationController
     @pokemon = PokemonBase.all.sample(100)
   end
 
+  def choose
+    @pokemon = PokemonBase.find(params[:pokemon_base_id])
+    @player = params[:player_number].to_s == "1" ?
+      @game.player_one : @game.player_two
+    PokemonCard.create(player: @player, pokemon_base: @pokemon)
+  end
+
   # PATCH/PUT /games/1
   # PATCH/PUT /games/1.json
   def update

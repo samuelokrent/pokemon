@@ -1,3 +1,8 @@
+<div class="jumbotron">
+  <h1 class="display-4">
+    Player <span id="player-number">1</span>, choose your Pokemon!
+  </h1>
+</div>
 <table>
   <tr>
     <% idx = 0 %>
@@ -12,3 +17,33 @@
     <% end %>
   </tr>
 </table>
+
+<script>
+  window.playerNumber = 1;
+
+  function setPlayerState(playerNumber) {
+    window.playerNumber = playerNumber;
+    $("#player-number").html("" + playerNumber);
+  }
+
+  function choose(pokemonID) {
+    console.log("Player " + playerNumber + " chooses " + pokemonID);
+    $.ajax({
+      url: "<%= choose_game_path(@game) %>?" +
+        "pokemon_base_id=" + pokemonID +
+        "&player_number=" + playerNumber,
+      type: "GET",
+      error: function(xhr, status) {
+        alert("Error: " + status);
+      },
+      success: function() {
+        console.log("Success");
+      },
+    });
+  }
+
+  $(function() {
+    setPlayerState(
+      <%= @game.player_one.pokemon_cards.count < Game.DECK_SIZE ? '1' : '2' %>);
+  });
+</script>
