@@ -14,7 +14,7 @@ pokedex.each do |p|
     pokemon.update_attributes({
       type_one: p['type'][0],
       type_two: ['type'][1],
-      hp: p['base']['hp'],
+      hp: p['base']['HP'],
       image: "#{p['id'].to_s.rjust(3, '0')}.png",
     })
   rescue Exception => e
