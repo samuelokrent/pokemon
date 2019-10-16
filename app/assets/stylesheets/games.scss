@@ -2,9 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .pokemon-card {
-  width: 300px;
-  background: #77b;
-  padding: 20px;
+  margin: 20px 20px 20px 20px;
+  display: inline-block;
 }
 .pokemon-card-name {
   
@@ -16,6 +15,5 @@
   float: right;
 }
 .pokemon-card-image {
-  width: 280px;
-  height: auto;
+  margin-top: 20px;
 }
