@@ -35,7 +35,7 @@ class GamesController < ApplicationController
     respond_to do |format|
       if @game.save
         Rails.logger.debug "SAVE"
-        format.html { redirect_to :pick_deck }
+        format.html { redirect_to pick_deck_game_path(@game) }
       else
         Rails.logger.debug "NOT SAVE: #{@game.errors.full_messages.inspect}"
         format.html { render :new }
