@@ -35,15 +35,12 @@ class GamesController < ApplicationController
     respond_to do |format|
       if @game.save
         Rails.logger.debug "SAVE"
-        format.html { redirect_to @game, notice: 'Game was successfully created.' }
-        format.json { render :show, status: :created, location: @game }
+        format.html { redirect_to :pick_deck }
       else
         Rails.logger.debug "NOT SAVE: #{@game.errors.full_messages.inspect}"
         format.html { render :new }
-        format.json { render json: @game.errors, status: :unprocessable_entity }
       end
     end
-    redirect_to :pick_deck
   end
 
   def pick_deck
