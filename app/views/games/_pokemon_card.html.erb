@@ -1,6 +1,11 @@
-<div class="pokemon-card">
-  <span class="pokemon-card-name"><%= pokemon.name %></span>
-  <span class="pokemon-card-type"><%= pokemon.type_one %></span>
-  <span class="pokemon-card-hp"><%= pokemon.hp %></span>
-  <%= image_tag pokemon.image_path, class: "pokemon-card-image" %>
+<div class="card" style="width: 18rem;">
+  <%= image_tag pokemon.image_path, class: "card-img-top" %>
+  <div class="card-body">
+    <h5 class="card-title"><%= pokemon.name %></h5>
+    <p class="card-text">
+      <span class="pokemon-card-type"><%= pokemon.type_one %></span>
+      <span class="pokemon-card-hp"><%= pokemon.hp %></span>
+    </p>
+    <a href="#" class="btn btn-primary">Choose</a>
+  </div>
 </div>
