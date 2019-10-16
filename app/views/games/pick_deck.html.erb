@@ -1,3 +1,14 @@
-<% @pokemon.each do |p| %>
-  <%= render partial: "pokemon_card", locals: { pokemon: p } %>
-<% end %>
+<table>
+  <tr>
+    <% idx = 0 %>
+    <% @pokemon.each do |p| %>
+      <td>
+        <%= render partial: "pokemon_card", locals: { pokemon: p } %>
+      </td>
+      <% idx += 1 %>
+      <% if idx % 3 == 0 %>
+        </tr><tr>
+      <% end %>
+    <% end %>
+  </tr>
+</table>
