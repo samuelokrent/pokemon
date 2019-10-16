@@ -28,12 +28,7 @@ ActiveRecord::Schema.define(version: 2019_10_14_094700) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "pokemon_cards", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.integer "pokemon_id"
-    t.integer "mega"
-  end
-
-  create_table "pokemons", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+  create_table "pokemon_bases", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "name"
     t.string "type_one"
     t.string "type_two"
@@ -41,6 +36,11 @@ ActiveRecord::Schema.define(version: 2019_10_14_094700) do
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pokemon_cards", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.integer "pokemon_id"
+    t.integer "mega"
   end
 
 end

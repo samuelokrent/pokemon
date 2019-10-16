@@ -9,11 +9,15 @@ require 'json'
 
 pokedex = JSON.load(File.read(Rails.root.join('config', 'pokedex.json')))
 pokedex.each do |p|
-  pokemon = Pokemon.find_or_create_by_name(p['name']['english'])
-  pokemon.update_attributes({
-    type_one: p['type'][0],
-    type_two: ['type'][1],
-    hp: p['base']['hp'],
-    image: "#{p['id'].to_s.rjust(3, '0')}.png",
-  })
+  begin
+    pokemon = PokemonBase.find_or_create_by(name: p['name']['english'])
+    pokemon.update_attributes({
+      type_one: p['type'][0],
+      type_two: ['type'][1],
+      hp: p['base']['hp'],
+      image: "#{p['id'].to_s.rjust(3, '0')}.png",
+    })
+  rescue Exception => e
+    puts "Could not create pokemon: #{p['name']}"
+  end
 end
