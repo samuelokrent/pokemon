@@ -43,6 +43,11 @@ class GamesController < ApplicationController
         format.json { render json: @game.errors, status: :unprocessable_entity }
       end
     end
+    redirect_to :pick_deck
+  end
+
+  def pick_deck
+    @pokemon = PokemonBase.all.sample(100)
   end
 
   # PATCH/PUT /games/1
