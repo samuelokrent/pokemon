@@ -1,6 +1,7 @@
+showChooseMessage("<%= @player.name %>", "<%= @pokemon.name %>");
 <% if @game.player_one.has_full_deck? and @game.player_two.has_full_deck? %>
   alert("Decks full");
- <% elsif @game.player_one.has_full_deck? or 
+<% elsif @game.player_one.has_full_deck? or 
   (@player == @game.player_one and !@game.player_two.has_full_deck?) %>
   setPlayerState(2);
 <% else %>

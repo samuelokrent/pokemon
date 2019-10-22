@@ -1,0 +1,3 @@
+class ShortAnswerQuestion < ApplicationRecord
+
+end
