@@ -74,7 +74,9 @@
   }
 
   function showChooseMessage(playerName, pokemonName) {
+    window.scrollTo(0, 0);
     $("#choose-modal-title").html(playerName + " chose " + pokemonName + "!");
+    $("#show-modal-btn").click();
   }
 
   $(function() {
