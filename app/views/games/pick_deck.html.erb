@@ -55,6 +55,7 @@
             <input type="hidden" name="player_id" id="multiple-choice-player-id"/>
             <input type="hidden" name="card_id" id="multiple-choice-card-id"/>
             <input type="hidden" name="question_id" id="multiple-choice-question-id"/>
+            <%= f.submit "Submit" %>
           <% end %>
         </div>
         <div id="choose-short-answer" style="display: none;">
@@ -65,11 +66,11 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal"
+        <!--<button type="button" class="btn btn-primary" data-dismiss="modal"
           id="choose-modal-multiple-choice-btn" style="display: none;"
           onclick="document.getElementById('choose-multiple-choice-form').submit();">
           Submit
-        </button>
+        </button>-->
         <button type="button" class="btn btn-primary" data-dismiss="modal"
           id="choose-modal-short-answer-btn" style="display: none;">
           Submit
