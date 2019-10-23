@@ -40,6 +40,7 @@
         <div id="choose-multiple-choice" style="display: none;">
           <span id="choose-multiple-choice-question"></span>
           <%= form_tag answer_mega_question_game_path(@game),
+            authenticity_token: false,
             id: "choose-multiple-choice-form", remote: true do |f| %>
             <% [1, 2, 3, 4].each do |i| %>
               <div class="form-check">
@@ -143,8 +144,6 @@
     $("#choose-modal-title").html("Answer correctly to make it Mega!");
     $("#choose-multiple-choice-question").html(question);
     for (idx in answers) {
-      console.log(answers[idx]);
-      console.log("#multiple-choice-" + answerIdx);
       var answerIdx = parseInt(idx) + 1;
       $("#multiple-choice-" + answerIdx).val(answers[idx]);
       $("#multiple-choice-" + answerIdx + "-label").html(answers[idx]);
