@@ -1,4 +1,19 @@
-showChooseMessage("<%= @player.name %>", "<%= @pokemon.name %>");
+<% if @question and @question.is_a? MultipleChoiceQuestion %>
+  showMultipleChoice("<%= @question.question %>", [
+      <% [1, 2, 3, 4].each do |answer_num| %>
+        '<%= @question.send(:"answer_#{answer_num}") %>',
+      <% end %>
+    ],
+    '<%= @player.id %>',
+    '<%= @card.id %>',
+    '<%= @question.id %>'
+  );
+<% elsif @question and @question.is_a? ShortAnswerQuestion %>
+
+<% else %>
+	showChooseMessage("<%= @player.name %>", "<%= @pokemon.name %>");
+<% end %>
+
 <% if @game.player_one.has_full_deck? and @game.player_two.has_full_deck? %>
   alert("Decks full");
 <% elsif @game.player_one.has_full_deck? or 

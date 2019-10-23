@@ -37,9 +37,43 @@
         </button>
       </div>
       <div class="modal-body" id="choose-modal-body">
-        
+        <div id="choose-multiple-choice" style="display: none;">
+          <span id="choose-multiple-choice-question"></span>
+          <%= form_tag answer_mega_question_games_path(@game),
+            id: "choose-multiple-choice-form", remote: true do |f| %>
+            <% [1, 2, 3, 4].each do |i| %>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="multiple_choice_answer"
+                  id="multiple-choice-<%= i %>">
+                <label class="form-check-label" for="multiple-choice-<%= i %>"
+                  id="multiple-choice-<%= i %>-label">
+                </label>
+              </div>
+            <% end %>
+            <input type="hidden" name="question_type" value="multiple-choice"/>
+            <input type="hidden" name="player_id" id="multiple-choice-player-id"/>
+            <input type="hidden" name="player_id" id="multiple-choice-card-id"/>
+            <input type="hidden" name="player_id" id="multiple-choice-question-id"/>
+          <% end %>
+        </div>
+      </div>
+      <div id="choose-short-answer" style="display: none;">
+          <span id="choose-short-answer-question"></span>
+          <form id="choose-short-answer-form">
+
+          </form>
+        </div>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal"
+          id="choose-modal-multiple-choice-btn" style="display: none;"
+          onclick="document.findElementById('choose-multiple-choice-form').submit();">
+          Submit
+        </button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"
+          id="choose-modal-short-answer-btn" style="display: none;">
+          Submit
+        </button>
         <button type="button" class="btn btn-primary" data-dismiss="modal"
           id="choose-modal-continue-btn">
           Continue
@@ -73,10 +107,51 @@
     });
   }
 
-  function showChooseMessage(playerName, pokemonName) {
+  function setModalState(state) {
+    var submitBtns = {
+      "multiple-choice": [
+        "choose-modal-multiple-choice-btn",
+        "choose-multiple-choice",
+      ],
+      "short-answer": [
+        "choose-modal-short-answer-btn",
+        "choose-short-answer",
+      ],
+      "chose": [
+        "choose-modal-continue-btn",
+      ],
+    };
+    for (s in submitBtns) {
+      for (var idx in submitBtns[s]) {
+        if (s == state) {
+          $("#" + submitBtns[s][idx]).show();
+        } else {
+          $("#" + submitBtns[s][idx]).hide();
+        }
+      }
+    }
     window.scrollTo(0, 0);
-    $("#choose-modal-title").html(playerName + " chose " + pokemonName + "!");
     $("#show-modal-btn").click();
+  }
+
+  function showChooseMessage(playerName, pokemonName, isMega) {
+    var fullPokemonName = isMega ? "MEGA " + pokemonName : pokemonName;
+    $("#choose-modal-title").html(playerName + " chose " + fullPokemonName + "!");
+    setModalState("chose");
+  }
+
+  function showMultipleChoice(question, answers, playerID, cardID, questionID) {
+    $("#choose-modal-title").html("Answer correctly to make it Mega!");
+    $("#choose-multiple-choice-question").html(question);
+    for (idx in answers) {
+      var answerIdx = idx + 1;
+      $("multiple-choice-" + answerIdx).val(answers[i]);
+      $("multiple-choice-" + answerIdx + "-label").html(answers[i]);
+    }
+    $("#multiple-choice-player-id").val(playerID);
+    $("#multiple-choice-card-id").val(cardID);
+    $("#multiple-choice-question-id").val(questionID);
+    setModalState("multiple-choice");
   }
 
   $(function() {

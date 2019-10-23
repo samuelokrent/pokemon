@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     member do
       get 'pick_deck'
       get 'choose'
+      post 'answer_mega_question'
     end
   end
 

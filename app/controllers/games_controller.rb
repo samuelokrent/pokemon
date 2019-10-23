@@ -51,7 +51,21 @@ class GamesController < ApplicationController
     @pokemon = PokemonBase.find(params[:pokemon_base_id])
     @player = params[:player_number].to_s == "1" ?
       @game.player_one : @game.player_two
-    PokemonCard.create(player: @player, pokemon_base: @pokemon)
+    @card = PokemonCard.create(player: @player, pokemon_base: @pokemon)
+    if @player.player_type == "student"
+      @question = MultipleChoiceQuestion.last
+    end
+  end
+
+  def answer_mega_question
+    @player = Player.find(params[:player_id])
+    @card = PokemonCard.find(params[:card_id])
+    if params[:question_type] == "multiple-choice"
+      @question = MultipleChoiceQuestion.find(params[:question_id])
+      if params[:multiple_choice_answer] == @question.correct_answer
+        @card.update_attribute(:mega, true)
+      end
+    end
   end
 
   # PATCH/PUT /games/1
