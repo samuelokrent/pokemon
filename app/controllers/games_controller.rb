@@ -53,7 +53,7 @@ class GamesController < ApplicationController
     @player = params[:player_number].to_s == "1" ?
       @game.player_one : @game.player_two
     @card = PokemonCard.create(player: @player, pokemon_base: @pokemon)
-    if @player.player_type == "student"
+    if false && @player.player_type == "student"
       @question = MultipleChoiceQuestion.all.sample
     end
   end
