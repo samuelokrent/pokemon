@@ -56,8 +56,7 @@
             <input type="hidden" name="player_id" id="multiple-choice-question-id"/>
           <% end %>
         </div>
-      </div>
-      <div id="choose-short-answer" style="display: none;">
+        <div id="choose-short-answer" style="display: none;">
           <span id="choose-short-answer-question"></span>
           <form id="choose-short-answer-form">
 
@@ -145,8 +144,8 @@
     $("#choose-multiple-choice-question").html(question);
     for (idx in answers) {
       var answerIdx = idx + 1;
-      $("multiple-choice-" + answerIdx).val(answers[idx]);
-      $("multiple-choice-" + answerIdx + "-label").html(answers[idx]);
+      $("#multiple-choice-" + answerIdx).val(answers[idx]);
+      $("#multiple-choice-" + answerIdx + "-label").html(answers[idx]);
     }
     $("#multiple-choice-player-id").val(playerID);
     $("#multiple-choice-card-id").val(cardID);
