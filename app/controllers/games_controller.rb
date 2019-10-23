@@ -53,7 +53,7 @@ class GamesController < ApplicationController
       @game.player_one : @game.player_two
     @card = PokemonCard.create(player: @player, pokemon_base: @pokemon)
     if @player.player_type == "student"
-      @question = MultipleChoiceQuestion.last
+      @question = MultipleChoiceQuestion.all.sample
     end
   end
 
