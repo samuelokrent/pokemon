@@ -66,7 +66,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal"
           id="choose-modal-multiple-choice-btn" style="display: none;"
-          onclick="document.findElementById('choose-multiple-choice-form').submit();">
+          onclick="document.getElementById('choose-multiple-choice-form').submit();">
           Submit
         </button>
         <button type="button" class="btn btn-primary" data-dismiss="modal"
@@ -143,7 +143,9 @@
     $("#choose-modal-title").html("Answer correctly to make it Mega!");
     $("#choose-multiple-choice-question").html(question);
     for (idx in answers) {
-      var answerIdx = idx + 1;
+      console.log(answers[idx]);
+      console.log("#multiple-choice-" + answerIdx);
+      var answerIdx = parseInt(idx) + 1;
       $("#multiple-choice-" + answerIdx).val(answers[idx]);
       $("#multiple-choice-" + answerIdx + "-label").html(answers[idx]);
     }
