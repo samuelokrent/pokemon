@@ -161,7 +161,7 @@
   function onSubmitMultipleChoice() {
     $.ajax({
       url: "<%= answer_mega_question_game_path(@game) %>",
-      type: "GET",
+      type: "POST",
       data: multipleChoice,
       success: function() {
         console.log("Multiple choice success");
