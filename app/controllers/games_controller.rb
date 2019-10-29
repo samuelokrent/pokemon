@@ -1,5 +1,6 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :edit, :update, :destroy, :pick_deck, :choose]
+  before_action :set_game, only: [:show, :edit, :update, :destroy, 
+    :pick_deck, :choose, :answer_mega_question]
   skip_before_action :verify_authenticity_token, :only => [:answer_mega_question]
 
   def home

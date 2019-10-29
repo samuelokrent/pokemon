@@ -1,3 +1,6 @@
 console.log("Answer mega question response");
 showChooseMessage(
   "<%= @player.name %>", "<%= @card.pokemon_base.name %>", <%= @card.mega ? "true" : "false" %>);
+<% if @game.player_one.has_full_deck? and @game.player_two.has_full_deck? %>
+  onDecksFull();
+<% end %>

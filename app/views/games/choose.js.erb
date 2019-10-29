@@ -1,4 +1,5 @@
 <% if @question and @question.is_a? MultipleChoiceQuestion %>
+  <% has_question = true %>
   showMultipleChoice("<%= @question.question %>", [
       <% [1, 2, 3, 4].each do |answer_num| %>
         '<%= @question.send(:"answer_#{answer_num}") %>',
@@ -9,13 +10,17 @@
     '<%= @question.id %>'
   );
 <% elsif @question and @question.is_a? ShortAnswerQuestion %>
-
+  <% has_question = true %>
 <% else %>
+  <% has_question = false %>
 	showChooseMessage("<%= @player.name %>", "<%= @pokemon.name %>");
 <% end %>
 
 <% if @game.player_one.has_full_deck? and @game.player_two.has_full_deck? %>
-  alert("Decks full");
+  console.log("Decks full");
+  <% unless has_question %>
+    onDecksFull();
+  <% end %>
 <% elsif @game.player_one.has_full_deck? or 
   (@player == @game.player_one and !@game.player_two.has_full_deck?) %>
   setPlayerState(2);
