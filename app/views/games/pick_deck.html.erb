@@ -182,6 +182,9 @@
   function onDecksFull() {
     $("#choose-modal-title").html("Decks are full! Ready to battle?");
     setModalState("chose");
+    $(document).click(function() {
+      window.location = "<%= battle_game_path(@game) %>";
+    });
   }
 
   $(function() {

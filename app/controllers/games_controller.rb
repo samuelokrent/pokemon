@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   before_action :set_game, only: [:show, :edit, :update, :destroy, 
-    :pick_deck, :choose, :answer_mega_question]
+    :pick_deck, :choose, :answer_mega_question, :battle]
   skip_before_action :verify_authenticity_token, :only => [:answer_mega_question]
 
   def home
@@ -68,6 +68,10 @@ class GamesController < ApplicationController
         @card.update_attribute(:mega, true)
       end
     end
+  end
+
+  def battle
+
   end
 
   # PATCH/PUT /games/1
