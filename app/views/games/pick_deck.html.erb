@@ -128,7 +128,7 @@
       }
     }
     window.scrollTo(0, 0);
-    $("#show-modal-btn").click();
+    $("#exampleModal").modal()
   }
 
   function showChooseMessage(playerName, pokemonName, isMega) {
@@ -175,7 +175,6 @@
         console.log("Multiple choice error", error);
       }
     });
-    $("#show-modal-btn").click();
   }
 
   $(function() {
