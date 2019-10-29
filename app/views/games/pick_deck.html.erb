@@ -101,6 +101,7 @@
       },
     });
     $("#choose-card-"+pokemonID).css("opacity", "0.4");
+    $("#pokemon-choose-button-"+pokemonID).remove();
   }
 
   function setModalState(state) {
@@ -168,6 +169,7 @@
       dataType: "script",
       success: function() {
         console.log("Multiple choice success");
+        $("#show-modal-btn").click();
       },
       error: function(xhr, status, error) {
         console.log("Multiple choice error", error);
