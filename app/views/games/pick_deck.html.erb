@@ -100,6 +100,7 @@
         console.log("Success");
       },
     });
+    $("#choose-card-"+pokemonID).css("opacity", "0.4");
   }
 
   function setModalState(state) {
@@ -146,7 +147,7 @@
       $("#multiple-choice-" + answerIdx + "-label").html(answer);
       $("#multiple-choice-" + answerIdx).click(function() {
         multipleChoice.multiple_choice_answer = answer;
-      });
+      }).prop("checked", false);
     }
     multipleChoice = {
       question_type: "multiple-choice",
@@ -171,7 +172,8 @@
       error: function(xhr, status, error) {
         console.log("Multiple choice error", error);
       }
-    })
+    });
+    $("#show-modal-btn").click();
   }
 
   $(function() {
