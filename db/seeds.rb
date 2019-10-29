@@ -21,3 +21,19 @@ pokedex.each do |p|
     puts "Could not create pokemon: #{p['name']}"
   end
 end
+
+MultipleChoiceQuestion.destroy_all
+raw_questions = File.read(Rails.root.join("config", "data", "multiple_choice.txt")).split("\n\n")
+raw_questions.each do |raw|
+  lines = raw.split("\n")
+  answers = lines[1..4]
+  shuffled = answers.shuffle
+  MultipleChoiceQuestion.create({
+    question: lines[0],
+    correct_answer: answers[0],
+    answer_1: shuffled[0],
+    answer_2: shuffled[1],
+    answer_3: shuffled[2],
+    answer_4: shuffled[3],
+  })
+end
