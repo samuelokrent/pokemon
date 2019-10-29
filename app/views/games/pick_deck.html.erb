@@ -146,8 +146,8 @@
       var answerIdx = parseInt(idx) + 1;
       var answer = answers[idx];
       $("#multiple-choice-" + answerIdx + "-label").html(answer);
-      $("#multiple-choice-" + answerIdx).click(function() {
-        multipleChoice.multiple_choice_answer = answer;
+      $("#multiple-choice-" + answerIdx).val(answer).click(function() {
+        multipleChoice.multiple_choice_answer = $(this).val();
       }).prop("checked", false);
     }
     multipleChoice = {
