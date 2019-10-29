@@ -169,6 +169,9 @@
       dataType: "script",
       success: function() {
         console.log("Multiple choice success");
+        setTimeout(function() {
+          $("#exampleModal").modal();
+        }, 1000);
       },
       error: function(xhr, status, error) {
         console.log("Multiple choice error", error);
