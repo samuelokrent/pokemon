@@ -163,6 +163,7 @@
       url: "<%= answer_mega_question_game_path(@game) %>",
       type: "POST",
       data: multipleChoice,
+      dataType: "script",
       success: function() {
         console.log("Multiple choice success");
       },
