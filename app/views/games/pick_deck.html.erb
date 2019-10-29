@@ -159,6 +159,7 @@
   }
 
   function onSubmitMultipleChoice() {
+    console.log("<%= answer_mega_question_game_path(@game) %>");
     $.ajax({
       url: "<%= answer_mega_question_game_path(@game) %>",
       type: "POST",
