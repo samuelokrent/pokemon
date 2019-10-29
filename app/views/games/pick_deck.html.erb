@@ -40,7 +40,6 @@
         <div id="choose-multiple-choice" style="display: none;">
           <span id="choose-multiple-choice-question"></span>
           <%= form_tag answer_mega_question_game_path(@game),
-            authenticity_token: false,
             id: "choose-multiple-choice-form", remote: true do |f| %>
             <% [1, 2, 3, 4].each do |i| %>
               <div class="form-check">
@@ -51,11 +50,6 @@
                 </label>
               </div>
             <% end %>
-            <input type="hidden" name="question_type" value="multiple-choice"/>
-            <input type="hidden" name="player_id" id="multiple-choice-player-id"/>
-            <input type="hidden" name="card_id" id="multiple-choice-card-id"/>
-            <input type="hidden" name="question_id" id="multiple-choice-question-id"/>
-            <%= submit_tag "Submit" %>
           <% end %>
         </div>
         <div id="choose-short-answer" style="display: none;">
@@ -66,11 +60,11 @@
         </div>
       </div>
       <div class="modal-footer">
-        <!--<button type="button" class="btn btn-primary" data-dismiss="modal"
+        <button type="button" class="btn btn-primary" data-dismiss="modal"
           id="choose-modal-multiple-choice-btn" style="display: none;"
-          onclick="document.getElementById('choose-multiple-choice-form').submit();">
+          onclick="onSubmitMultipleChoice();">
           Submit
-        </button>-->
+        </button>
         <button type="button" class="btn btn-primary" data-dismiss="modal"
           id="choose-modal-short-answer-btn" style="display: none;">
           Submit
@@ -141,18 +135,41 @@
     setModalState("chose");
   }
 
+  var multipleChoice = {};
+
   function showMultipleChoice(question, answers, playerID, cardID, questionID) {
     $("#choose-modal-title").html("Answer correctly to make it Mega!");
     $("#choose-multiple-choice-question").html(question);
-    for (idx in answers) {
+    for (var idx in answers) {
       var answerIdx = parseInt(idx) + 1;
-      $("#multiple-choice-" + answerIdx).val(answers[idx]);
-      $("#multiple-choice-" + answerIdx + "-label").html(answers[idx]);
+      var answer = answers[idx];
+      $("#multiple-choice-" + answerIdx + "-label").html(answer);
+      $("#multiple-choice-" + answerIdx).click(function() {
+        multipleChoice.multiple_choice_answer = answer;
+      });
     }
-    $("#multiple-choice-player-id").val(playerID);
-    $("#multiple-choice-card-id").val(cardID);
-    $("#multiple-choice-question-id").val(questionID);
+    multipleChoice = {
+      question_type: "multiple-choice",
+      player_id: playerID,
+      card_id: cardID,
+      question_id: questionID,
+      multiple_choice_answer: null,
+    };
     setModalState("multiple-choice");
+  }
+
+  function onSubmitMultipleChoice() {
+    $.ajax({
+      url: "<%= answer_mega_question_game_path(@game) %>",
+      type: "GET",
+      data: multipleChoice,
+      success: function() {
+        console.log("Multiple choice success");
+      },
+      error: function(xhr, status, error) {
+        console.log("Multiple choice error", error);
+      }
+    })
   }
 
   $(function() {
