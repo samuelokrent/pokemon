@@ -46,7 +46,7 @@ class GamesController < ApplicationController
   end
 
   def pick_deck
-    @pokemon = PokemonBase.all.sample(100)
+    @pokemon = PokemonBase.all.sample(40)
   end
 
   def choose
