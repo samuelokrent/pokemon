@@ -37,6 +37,8 @@
         </button>
       </div>
       <div class="modal-body" id="choose-modal-body">
+        <div id="choose-message" style="display: none;">
+        </div>
         <div id="choose-multiple-choice" style="display: none;">
           <span id="choose-multiple-choice-question"></span>
           <%= form_tag answer_mega_question_game_path(@game),
@@ -116,6 +118,7 @@
       ],
       "chose": [
         "choose-modal-continue-btn",
+        "choose-message",
       ],
     };
     for (s in submitBtns) {
@@ -131,9 +134,14 @@
     $("#exampleModal").modal();
   }
 
-  function showChooseMessage(playerName, pokemonName, isMega) {
+  function showChooseMessage(playerName, pokemonName, isMega, message) {
     var fullPokemonName = isMega ? "MEGA " + pokemonName : pokemonName;
     $("#choose-modal-title").html(playerName + " chose " + fullPokemonName + "!");
+    if (message) {
+      $("#choose-message").html(message);
+    } else {
+      $("#choose-message").html("");
+    }
     setModalState("chose");
   }
 

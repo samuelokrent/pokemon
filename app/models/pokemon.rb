@@ -1,3 +1,0 @@
-class PokemonBase < ApplicationRecord
-
-end
