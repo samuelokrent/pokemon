@@ -1,11 +1,83 @@
-What is 10 X 10?
-100
-20
-10
-1
+Charizard's HP is 120. Drinking a power potion increases his HP by 10. What is Charizard's HP after drinking a power potion?
+130
+121
+210
+200
 
-What is 2 X 4?
+Misty was wandering in the woods and saw 7 Lickitungs. Ash was with her and he saw 4 Lickitungs. How many Lickitungs did they see in total?
+11
 8
-1
-4
+74
+10
+
+Bulbasaur's Vine Whip attack does 20 damage. Blastoise's Torrent attack does twice as much damage. How much damage does Blastoise's Torrent attack do?
+40
+30
+22
+10
+
+A pokemon master is allowed 6 Poke balls. If Ash, Brock, and Misty all have 6 Poke balls, how many Poke balls do they have in total?
+18
+24
+12
+9
+
+Ekans loves to eat Pidgey eggs! He found 4 Pidgey nests, and each one had 3 Pidgey eggs in it. If Ekans eats all of them, how many Pidgey eggs will he eat?
+12
+15
 16
+7
+
+Flareon's Flash Fire attack does 30 damage. Umbreon's Moonlight Fang attack does 15 damage, and her Inner Focus attack does 20 damage. What does more damage, Flareon's Flash Fire alone, or Umbreon's Moonlight Fang plus her Inner Focus attack?
+Umbreon's combined attack
+Flareon's Flash Fire
+Both are the same
+Meowth's Payday attack
+
+Cyndaquil and Magicarp don't get along - Cyndaquil is a fire type, while Magicarp is a water type! On the other hand, Magicarp and Goldeen get along very well. They swim together, teach each other new attacks, and share food. What kind of relationship do Magicarp and Goldeen have?
+Friends
+Enemies
+Teacher/student
+Father/son
+
+As a psychic type pokemon, Alakazam often plays tricks on people. He will make items disappear when you're not looking so you can't find them. He will make things float away from you when you're trying to hold them. He likes to confuse people for fun! What word describes Alakazam?
+Troublemaker
+Helpful
+Frightened
+Curious
+
+Ditto and Snorlax are both normal type pokemon. They can both be pretty stubborn at times. They are also both pretty soft and jiggly. However, Ditto fits in your hands, while Snorlax couldn't even fit in your house. They still get along very well with each other, though! What is one way that Ditto and Snorlax are different from each other?
+Their size
+How jiggly they are
+Their types
+Ditto is stubborn but Snorlax is not
+
+A Pokemon card includes a few different kinds of information on its Pokemon. The type and the HP are in the corner. A picture of the Pokemon is in the center. The Pokemon's attacks are listed near the bottom. There's a lot to read! What is one kind of information that isn't on a Pokemon card?
+Its weight
+Its HP
+Its picture
+Its attacks
+
+Do you know how a Pokeball works? Inside the ball is an empty space that can contain a small version of a Pokemon. The shell of the ball is made of a very hard material - it needs to be hard because some Pokemon are very powerful, and could attack their way out otherwise! There is a clasp on the front of the Pokeball that keeps the ball shut until it's time to battle. When a Pokemon master chooses a Pokemon, they press a button on the front of the Pokeball the releases the clasp and allows the Pokemon to appear outside of the ball. Why do Pokeballs have to be so hard?
+To keep powerful pokemon in
+To avoid getting dented on rocks
+To bash against opponent's Pokeballs
+So they don't rust
+
+Ash captured a Ninetales today! He had just left Lavender Town when he saw it grazing on some grass. Quickly, he pulled out a Pokeball and said, "Pikachu, I choose you!". Ninetales fainted after Pikachu used Stun on him. Ash pulled out another Pokeball and captured Ninetales, and the whole team celebrated! Which of these things happened first?
+Ash leaves Lavender Town
+Ash captures Ninetales
+Pikachu uses Stun
+Ninetales faints
+
+Ash tried to capture Mewtwo by fighting it with one of his best Pokemon. He chose Bulbasaur, planning to use Vine Whip to defeat Mewtwo. Bulbasaur took one look at Mewtwo and tried to run from the fight, though. Mewtwo was one of the strongest Pokemon there was, and Bulbasaur was worried he couldn't win. Ash eventually had to call him back into the Pokeball. Why didn't Bulbasaur fight Mewtwo?
+He was too scared of him
+The Pokeball wouldn't open
+Ash thought Squirtle was a better choice
+Mewtwo flew away
+
+As an ice type Pokemon, Articuno feels most comfortable at the top of a snowy mountain - the ice makes him feel at home! Where do you think Venusaur (a grass type pokemon), would feel the most comfortable?
+In a forest
+On top of a volcano
+In the ocean
+In a rocky cave
