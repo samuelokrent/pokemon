@@ -1,0 +1,3 @@
+class AttackBase < ApplicationRecord
+
+end

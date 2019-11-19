@@ -22,6 +22,18 @@ pokedex.each do |p|
   end
 end
 
+moves = JSON.load(File.read(Rails.root.join('config', 'moves.json')))
+moves.each do |m|
+  begin
+    attack = AttackBase.find_or_create_by(name: m['ename'])
+    attack.update_attributes({
+      type: m['type']
+    })
+  rescue Exception => e
+    puts "Could not create move: #{m["ename"]}"
+  end
+end
+
 MultipleChoiceQuestion.destroy_all
 raw_questions = File.read(Rails.root.join("config", "data", "multiple_choice.txt")).split("\n\n")
 raw_questions.each do |raw|

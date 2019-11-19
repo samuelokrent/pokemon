@@ -4,7 +4,7 @@ showChooseMessage(
   "<%= @card.pokemon_base.name %>",
   <%= @card.mega ? "true" : "false" %>,
   '<%= @card.mega ?
-  	"Way to go! HP boosted from #{@card.pokemon_base.hp} to #{@card.real_hp}!" :
+  	"Way to go! HP boosted from #{@card.pokemon_base.hp} to #{@card.hp}!" :
   	"So close! The correct answer was #{@question.correct_answer}" %>'
 );
 <% if @game.player_one.has_full_deck? and @game.player_two.has_full_deck? %>

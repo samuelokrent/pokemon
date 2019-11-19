@@ -33,10 +33,12 @@ class GamesController < ApplicationController
   def create
     Rails.logger.debug game_params.inspect
     @game = Game.new(game_params)
+    @game.state = "building_decks"
 
     respond_to do |format|
       if @game.save
         Rails.logger.debug "SAVE"
+        @game.update_state
         format.html { redirect_to pick_deck_game_path(@game) }
       else
         Rails.logger.debug "NOT SAVE: #{@game.errors.full_messages.inspect}"
@@ -57,6 +59,8 @@ class GamesController < ApplicationController
     if @player.player_type == "student"
       @question = MultipleChoiceQuestion.all.sample
     end
+    @game.advance_turn
+    @game.update_state
   end
 
   def answer_mega_question

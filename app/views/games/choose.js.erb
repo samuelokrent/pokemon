@@ -16,7 +16,7 @@
 	showChooseMessage("<%= @player.name %>", "<%= @pokemon.name %>");
 <% end %>
 
-<% if @game.player_one.has_full_deck? and @game.player_two.has_full_deck? %>
+<% if @game.decks_full? %>
   console.log("Decks full");
   <% unless has_question %>
     onDecksFull();
