@@ -1,8 +1,6 @@
 class PokemonCard < ApplicationRecord
   belongs_to :pokemon_base
   belongs_to :player
-  belongs_to :attack_one, class_name: 'Attack', foreign_key: 'attack_one_id'
-  belongs_to :attack_two, class_name: 'Attack', foreign_key: 'attack_two_id'
   has_many :attacks
   delegate :type_one, to: :pokemon_base, allow_nil: true
   delegate :type_two, to: :pokemon_base, allow_nil: true
@@ -19,7 +17,7 @@ class PokemonCard < ApplicationRecord
   end
 
   def initialize_attacks
-    attack_bases = AttackBase.where(type: self.type_one).sample(2)
+    attack_bases = AttackBase.where(attack_type: self.type_one).sample(2)
     attack_bases.each do |ab|
       Attack.create(pokemon_card: self, attack_base: ab, power: rand(self.attack_power_range))
     end
