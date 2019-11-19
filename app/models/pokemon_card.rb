@@ -6,8 +6,7 @@ class PokemonCard < ApplicationRecord
   has_many :attacks
   delegate :type_one, to: :pokemon_base, allow_nil: true
   delegate :type_two, to: :pokemon_base, allow_nil: true
-  before_create :initialize_health
-  after_create :initialize_attacks
+  before_create :initialize_attacks, :initialize_health
 
   MEGA_HP_MULTIPLIER = 1.3
   LOWER_BOUND_ATTACK_POWER = 0.25
@@ -20,7 +19,7 @@ class PokemonCard < ApplicationRecord
   end
 
   def initialize_attacks
-    attack_bases = AttackBase.where(attack_type: self.type_one).sample(2)
+    attack_bases = AttackBase.where(type: self.type_one).sample(2)
     attack_bases.each do |ab|
       Attack.create(pokemon_card: self, attack_base: ab, power: rand(self.attack_power_range))
     end
