@@ -4,7 +4,8 @@ class PokemonCard < ApplicationRecord
   has_many :attacks
   delegate :type_one, to: :pokemon_base, allow_nil: true
   delegate :type_two, to: :pokemon_base, allow_nil: true
-  before_create :initialize_attacks, :initialize_health
+  before_create :initialize_health
+  after_create :initialize_attacks
 
   MEGA_HP_MULTIPLIER = 1.3
   LOWER_BOUND_ATTACK_POWER = 0.25
