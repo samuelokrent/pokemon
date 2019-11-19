@@ -10,15 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_22_225600) do
+ActiveRecord::Schema.define(version: 2019_11_18_221800) do
+
+  create_table "attack_bases", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.string "name"
+    t.string "attack_type"
+  end
+
+  create_table "attacks", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
+    t.integer "attack_base_id"
+    t.integer "pokemon_card_id"
+    t.integer "power"
+  end
 
   create_table "games", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "name"
     t.integer "player_one_id"
     t.integer "player_two_id"
-    t.string "state"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "state", default: "new"
+    t.integer "turn", default: 1
   end
 
   create_table "multiple_choice_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
@@ -53,6 +65,9 @@ ActiveRecord::Schema.define(version: 2019_10_22_225600) do
     t.integer "player_id"
     t.integer "pokemon_base_id"
     t.boolean "mega"
+    t.integer "health"
+    t.integer "attack_one_id"
+    t.integer "attack_two_id"
   end
 
   create_table "short_answer_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|

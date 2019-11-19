@@ -27,7 +27,7 @@ moves.each do |m|
   begin
     attack = AttackBase.find_or_create_by(name: m['ename'])
     attack.update_attributes({
-      type: m['type']
+      attack_type: m['type']
     })
   rescue Exception => e
     puts "Could not create move: #{m["ename"]}"
