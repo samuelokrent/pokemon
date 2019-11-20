@@ -11,7 +11,7 @@ class Player < ApplicationRecord
   end
 
   def active_card
-  	self.pokemon_cards.select(&:alive?).first?
+  	self.pokemon_cards.select(&:alive?).first
   end
 
   def defeated?

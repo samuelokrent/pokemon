@@ -36,7 +36,6 @@
   }
   .health {
     height: 100%;
-    width: 80%;
     background-color: red;
   }
   .dead {
@@ -74,11 +73,11 @@
     border: 1px solid green;
   }
 
-  #card-1 {
+  #arena-card-1 {
     float: left;
   }
 
-  #card-2 {
+  #arena-card-2 {
     float: right;
   }
 
@@ -160,8 +159,8 @@
     <div class="health-bar">
       <div class="health"></div>
     </div>
-    <button type="button" class="btn btn-primary attack-btn"></button><br>
-    <button type="button" class="btn btn-primary attack-btn"></button>
+    <button type="button" class="btn btn-primary attack-btn attack-btn-1"></button><br>
+    <button type="button" class="btn btn-primary attack-btn attack-btn-2"></button>
   </div>
   <div id="arena-card-2" class="card card-<%= @game.player_two.active_card.id %>">
     <div class="card-stats">
@@ -175,8 +174,8 @@
     <div class="health-bar">
       <div class="health"></div>
     </div>
-    <button type="button" class="btn btn-primary attack-btn"></button><br>
-    <button type="button" class="btn btn-primary attack-btn"></button>
+    <button type="button" class="btn btn-primary attack-btn attack-btn-1"></button><br>
+    <button type="button" class="btn btn-primary attack-btn attack-btn-2"></button>
   </div>
 </div>
 
