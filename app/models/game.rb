@@ -37,6 +37,12 @@ class Game < ApplicationRecord
     self.player_one.defeated? || self.player_two.defeated?
   end
 
+  # For development
+  def fill_decks
+    self.player_one.fill_deck
+    self.player_two.fill_deck
+  end
+
   def to_hash
     {
       id: self.id,

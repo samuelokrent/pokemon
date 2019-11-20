@@ -48,6 +48,10 @@ class GamesController < ApplicationController
   end
 
   def pick_deck
+    @game.update_state
+    if @game.state == "battle"
+      redirect_to :battle
+    end
     @pokemon = PokemonBase.all.sample(40)
   end
 

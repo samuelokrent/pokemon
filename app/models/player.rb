@@ -18,6 +18,13 @@ class Player < ApplicationRecord
   	self.pokemon_cards.select { |c| !c.alive? }.count == Game.DECK_SIZE
   end
 
+  # For development
+  def fill_deck
+    (Game.DECK_SIZE - self.pokemon_cards.count).times do
+      PokemonCard.create(player: self, pokemon_base: PokemonBase.all.sample)
+    end
+  end
+
   def to_hash
     {
       id: self.id,
