@@ -1,0 +1,387 @@
+<!--DOCTYPE HTML-->
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+      .deck {
+        height: 100%;
+        width: 150px;
+        background-color: #eeeeee;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 15px;
+      }
+      #deck-1 {
+        left: 0;
+      }
+      #deck-2 {
+        right: 0;
+      }
+      .deck .card {
+        height: 15%;
+        width: 100px;
+        margin-top: 3%;
+        background-color: #ffffff;
+        padding: 10px;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .health-bar {
+        margin-top: 10px;
+        width: 100%;
+        height: 8px;
+        background-color: #eeeeee;
+      }
+      .health {
+        height: 100%;
+        width: 80%;
+        background-color: red;
+      }
+      .dead {
+        opacity: 0.4;
+      }
+
+      #message-board {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        width: 60%;
+        height: 80px;
+        text-align: center;
+        font-size: 48px;
+        background-color: #eeeeee;
+      }
+
+      #arena {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        width: 60%;
+        height: 400px;
+      }
+
+      #arena .card {
+        width: 300px;
+        background-color: #ffffff;
+        display: inline-block;
+        border: 1px solid #dddddd;
+        padding: 30px;
+      }
+
+      #arena .card.current-turn {
+        border: 1px solid green;
+      }
+
+      #card-1 {
+        float: left;
+      }
+
+      #card-2 {
+        float: right;
+      }
+
+      .attack-btn {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      .card-name {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .card-stats {
+        display: block;
+        height: 20px;
+      }
+
+      .card-stat {
+        display: inline-block;
+      }
+
+      .card-type {
+        float: left;
+      }
+
+      .card-hp {
+        float: right;
+      }
+
+      #battle-multiple-choice {
+        padding: 20px;
+      }
+
+      #battle-multiple-choice-question {
+        margin-bottom: 10px;
+      }
+
+    </style>
+
+
+    <div id="deck-1" class="deck">
+      <div class="card dead">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="deck-2" class="deck">
+      <div class="card dead">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="message-board">
+      Player <span class="current-turn-number">1</span>, Choose your attack!
+    </div>
+
+    <div id="arena">
+      <div id="arena-card-1" class="card current-turn">
+        <div class="card-stats">
+          <div class="card-stat card-type">Grass</div>
+          <div class="card-stat card-hp"><span class="card-hp-span">120</span> HP</div>
+        </div>
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="card-name">Bulbasaur</div>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+        <button type="button" class="btn btn-primary attack-btn">Attack 1</button><br>
+        <button type="button" class="btn btn-primary attack-btn">Attack 2</button>
+      </div>
+      <div id="arena-card-2" class="card">
+        <div class="card-stats">
+          <div class="card-stat card-type">Grass</div>
+          <div class="card-stat card-hp"><span class="card-hp-span">120</span> HP</div>
+        </div>
+        <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+        <div class="card-name">Bulbasaur</div>
+        <div class="health-bar">
+          <div class="health"></div>
+        </div>
+        <button type="button" class="btn btn-primary attack-btn attack-btn-1">Attack 1</button><br>
+        <button type="button" class="btn btn-primary attack-btn attack-btn-2">Attack 2</button>
+      </div>
+    </div>
+
+    <div class="modal fade" id="battle-message-modal" tabindex="-1"
+         role="dialog" aria-labelledby="battle-message-modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="battle-message-modal-label">
+              <span id="battle-message-modal-title">A new message!</span>
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="battle-message-modal-body">
+            <div id="battle-message">
+              Here is some subtext for the message
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal"
+              id="battle-message-modal-ok-btn">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="battle-multiple-choice-modal" tabindex="-1"
+         role="dialog" aria-labelledby="battle-multiple-choice-modal-label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="battle-multiple-choice-modal-label">
+              <span id="battle-multiple-choice-modal-title">Make it super effective!</span>
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="battle-multiple-choice">
+            <div id="battle-multiple-choice-question">Here is the question</div>
+            <!--<%= form_tag answer_mega_question_game_path(@game),
+              id: "choose-multiple-choice-form", remote: true do |f| %>
+              <% [1, 2, 3, 4].each do |i| %>-->
+            <form>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="multiple_choice_answer"
+                  id="multiple-choice-1">
+                <label class="form-check-label" for="multiple-choice-1"
+                  id="multiple-choice-1-label">
+                  Answer 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="multiple_choice_answer"
+                  id="multiple-choice-1">
+                <label class="form-check-label" for="multiple-choice-1"
+                  id="multiple-choice-1-label">
+                  Answer 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="multiple_choice_answer"
+                  id="multiple-choice-1">
+                <label class="form-check-label" for="multiple-choice-1"
+                  id="multiple-choice-1-label">
+                  Answer 1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="multiple_choice_answer"
+                  id="multiple-choice-1">
+                <label class="form-check-label" for="multiple-choice-1"
+                  id="multiple-choice-1-label">
+                  Answer 1
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal"
+              id="battle-multiple-choice-modal-ok-btn">
+              Go!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      function showMessage(title, message) {
+        $("#battle-message-modal-title").html(title);
+        $("#battle-message").html(message);
+        $("#battle-message-modal").modal();
+      }
+
+      function startTurn() {
+        $.ajax({
+          url: "<%= state_game_path(@game) %>",
+          type: "GET",
+          error: function(xhr, status) {
+            alert("Error: " + status);
+          },
+          success: function(res) {
+            console.log("Success", res);
+            setGameState(res);
+          },
+        });
+      }
+
+      function setGameState(game) {
+        $(".current-turn-number").html(game.turn);
+        $(".card").removeClass("current-turn");
+        $("#arena-card-"+game.turn).addClass("current-turn");
+      }
+
+      function setCard(card) {
+        $card = $("#card-"+card.id);
+        $card.find("img").prop("src", "/assets/"+card.image);
+        $card.find(".health").css("width", ""+((card.health*100)/card.hp)+"%");
+        if (card.alive) {
+          $card.removeClass("dead");
+        } else {
+          $card.addClass("dead");
+        }
+        $card.find(".card-type").html(card.type);
+        $card.find(".card-hp-span").html(card.hp);
+        $card.find(".card-name").html(card.name);
+        $card.find(".attack-btn-1").html(card.attacks[0].name).
+          data("attack-id", card.attacks[0].id);
+        $card.find(".attack-btn-2").html(card.attacks[1].name).
+          data("attack-id", card.attacks[1].id);
+      }
+
+      $(function() {
+        startTurn();
+      })
+
+    </script>
+
+  </body>
+</html>

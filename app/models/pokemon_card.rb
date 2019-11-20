@@ -4,6 +4,7 @@ class PokemonCard < ApplicationRecord
   has_many :attacks
   delegate :type_one, to: :pokemon_base, allow_nil: true
   delegate :type_two, to: :pokemon_base, allow_nil: true
+  delegate :image_path, to: :pokemon_base, allow_nil: true
   before_create :initialize_health
   after_create :initialize_attacks
 
@@ -44,5 +45,24 @@ class PokemonCard < ApplicationRecord
 
   def alive?
     self.health > 0
+  end
+
+  def active?
+    self == self.player.active_card
+  end
+
+  def to_hash
+    {
+      id: self.id,
+      player_id: self.player.id,
+      name: self.name,
+      type: self.type,
+      hp: self.hp,
+      health: self.health,
+      alive: self.alive?,
+      active: self.active?,
+      attacks: self.attacks.map(&:to_hash),
+      image: self.image_path,
+    }
   end
 end

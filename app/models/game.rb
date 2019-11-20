@@ -32,4 +32,21 @@ class Game < ApplicationRecord
   def advance_turn
     self.update_attribute(:turn, 3 - self.turn)
   end
+
+  def ended?
+    self.player_one.defeated? || self.player_two.defeated?
+  end
+
+  def to_hash
+    {
+      id: self.id,
+      players: [
+        self.player_one.to_hash,
+        self.player_two.to_hash,
+      ],
+      state: self.state,
+      turn: self.turn,
+      ended: self.ended?,
+    }
+  end
 end

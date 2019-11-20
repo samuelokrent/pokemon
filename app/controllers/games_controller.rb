@@ -1,7 +1,7 @@
 class GamesController < ApplicationController
   before_action :set_game, only: [:show, :edit, :update, :destroy, 
-    :pick_deck, :choose, :answer_mega_question, :battle]
-  skip_before_action :verify_authenticity_token, :only => [:answer_mega_question]
+    :pick_deck, :choose, :answer_mega_question, :battle, :state]
+  skip_before_action :verify_authenticity_token
 
   def home
   end
@@ -76,6 +76,10 @@ class GamesController < ApplicationController
 
   def battle
 
+  end
+
+  def state
+    render json: @game.to_hash.to_json
   end
 
   # PATCH/PUT /games/1

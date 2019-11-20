@@ -9,4 +9,11 @@ class Attack < ApplicationRecord
     multiplier = super_effective ? SUPER_EFFECTIVE_MULTIPLIER : 1
     self.power * multiplier
   end
+
+  def to_hash
+    {
+      id: self.id,
+      name: self.name,
+    }
+  end
 end
