@@ -19,9 +19,11 @@ class Player < ApplicationRecord
   end
 
   def to_hash
-  	id: self.id,
-  	deck: self.pokemon_cards.map(&:to_hash),
-  	active_card: self.active_card.to_hash,
-  	student: self.student?,
+    {
+      id: self.id,
+      deck: self.pokemon_cards.map(&:to_hash),
+      active_card: self.active_card.to_hash,
+      student: self.student?,
+    }
   end
 end
