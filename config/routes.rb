@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get 'choose'
       post 'answer_mega_question'
       get 'battle'
+      get 'state'
     end
   end
 
