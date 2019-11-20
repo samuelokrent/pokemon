@@ -132,6 +132,14 @@
 
 
     <div id="deck-1" class="deck">
+      <% @game.player_one.pokemon_cards.each do |card| %>
+        <div class="card">
+          <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
+          <div class="health-bar">
+            <div class="health"></div>
+          </div>
+        </div>
+      <% end %>
       <div class="card dead">
         <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
         <div class="health-bar">

@@ -5,6 +5,7 @@ class PokemonCard < ApplicationRecord
   delegate :type_one, to: :pokemon_base, allow_nil: true
   delegate :type_two, to: :pokemon_base, allow_nil: true
   delegate :image_path, to: :pokemon_base, allow_nil: true
+  delegate :name, to: :pokemon_base, allow_nil: true
   before_create :initialize_health
   after_create :initialize_attacks
 
@@ -56,7 +57,7 @@ class PokemonCard < ApplicationRecord
       id: self.id,
       player_id: self.player.id,
       name: self.name,
-      type: self.type,
+      type: self.type_one,
       hp: self.hp,
       health: self.health,
       alive: self.alive?,

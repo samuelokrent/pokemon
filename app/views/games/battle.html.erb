@@ -122,81 +122,25 @@
 
 
 <div id="deck-1" class="deck">
-  <div class="card dead">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
+  <% @game.player_one.pokemon_cards.each do |card| %>
+    <div class="card card-<%= card.id %>">
+      <%= image_tag card.image_path %>
+      <div class="health-bar">
+        <div class="health"></div>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
+  <% end %>
 </div>
 
 <div id="deck-2" class="deck">
-  <div class="card dead">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
+  <% @game.player_two.pokemon_cards.each do |card| %>
+    <div class="card card-<%= card.id %>">
+      <%= image_tag card.image_path %>
+      <div class="health-bar">
+        <div class="health"></div>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
-  <div class="card">
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="health-bar">
-      <div class="health"></div>
-    </div>
-  </div>
+  <% end %>
 </div>
 
 <div id="message-board">
@@ -204,31 +148,35 @@
 </div>
 
 <div id="arena">
-  <div id="arena-card-1" class="card current-turn">
+  <div id="arena-card-1" class="card current-turn card-<%= @game.player_one.active_card.id %>">
     <div class="card-stats">
-      <div class="card-stat card-type">Grass</div>
-      <div class="card-stat card-hp"><span class="card-hp-span">120</span> HP</div>
+      <div class="card-stat card-type"><%= @game.player_one.active_card.type_one %></div>
+      <div class="card-stat card-hp">
+      	<span class="card-hp-span"><%= @game.player_one.active_card.hp %></span> HP
+      </div>
     </div>
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="card-name">Bulbasaur</div>
+    <%= image_tag @game.player_one.active_card.image_path %>
+    <div class="card-name"><%= @game.player_one.active_card.name %></div>
     <div class="health-bar">
       <div class="health"></div>
     </div>
-    <button type="button" class="btn btn-primary attack-btn">Attack 1</button><br>
-    <button type="button" class="btn btn-primary attack-btn">Attack 2</button>
+    <button type="button" class="btn btn-primary attack-btn"></button><br>
+    <button type="button" class="btn btn-primary attack-btn"></button>
   </div>
-  <div id="arena-card-2" class="card">
+  <div id="arena-card-2" class="card card-<%= @game.player_two.active_card.id %>">
     <div class="card-stats">
-      <div class="card-stat card-type">Grass</div>
-      <div class="card-stat card-hp"><span class="card-hp-span">120</span> HP</div>
+      <div class="card-stat card-type"><%= @game.player_two.active_card.type_one %></div>
+      <div class="card-stat card-hp">
+      	<span class="card-hp-span"><%= @game.player_two.active_card.hp %></span> HP
+      </div>
     </div>
-    <img src="file:///Users/sam/code/pokemon/app/assets/images/pokemon/001.png"/>
-    <div class="card-name">Bulbasaur</div>
+    <%= image_tag @game.player_two.active_card.image_path %>
+    <div class="card-name"><%= @game.player_two.active_card.name %></div>
     <div class="health-bar">
       <div class="health"></div>
     </div>
-    <button type="button" class="btn btn-primary attack-btn attack-btn-1">Attack 1</button><br>
-    <button type="button" class="btn btn-primary attack-btn attack-btn-2">Attack 2</button>
+    <button type="button" class="btn btn-primary attack-btn"></button><br>
+    <button type="button" class="btn btn-primary attack-btn"></button>
   </div>
 </div>
 
@@ -238,16 +186,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="battle-message-modal-label">
-          <span id="battle-message-modal-title">A new message!</span>
+          <span id="battle-message-modal-title"></span>
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body" id="battle-message-modal-body">
-        <div id="battle-message">
-          Here is some subtext for the message
-        </div>
+        <div id="battle-message"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal"
@@ -272,7 +218,7 @@
         </button>
       </div>
       <div id="battle-multiple-choice">
-        <div id="battle-multiple-choice-question">Here is the question</div>
+        <div id="battle-multiple-choice-question"></div>
         <form>
           <div class="form-check">
             <input class="form-check-input" type="radio" name="multiple_choice_answer"
@@ -347,7 +293,7 @@
   }
 
   function setCard(card) {
-    $card = $("#card-"+card.id);
+    $card = $(".card-"+card.id);
     $card.find("img").prop("src", "/assets/"+card.image);
     $card.find(".health").css("width", ""+((card.health*100)/card.hp)+"%");
     if (card.alive) {
