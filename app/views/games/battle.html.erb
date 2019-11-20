@@ -289,6 +289,12 @@
     $(".current-turn-number").html(game.turn);
     $(".card").removeClass("current-turn");
     $("#arena-card-"+game.turn).addClass("current-turn");
+    for (playerIdx in game.players) {
+    	var deck = game.players[playerIdx].deck;
+    	for (cardIdx in deck) {
+    		setCard(deck[cardIdx]);
+    	}
+    }
   }
 
   function setCard(card) {
