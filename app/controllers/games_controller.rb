@@ -78,7 +78,7 @@ class GamesController < ApplicationController
   end
 
   def battle
-    rander layout: "battle"
+    render layout: "battle"
   end
 
   def state
