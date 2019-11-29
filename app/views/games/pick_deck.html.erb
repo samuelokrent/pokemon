@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h1 class="display-4">
-    Player <span id="player-number"><%= @game.turn %></span>, choose your Pokemon!
+    <span id="player-name"><%= @game.current_player.name %></span>, choose your Pokemon!
   </h1>
 </div>
 <table>
@@ -82,10 +82,11 @@
 
 <script>
   window.playerNumber = <%= @game.turn %>;
+  window.players = [null, '<%= j @game.player_one.name %>', '<%= j @game.player_two.name %>'];
 
   function setPlayerState(playerNumber) {
     window.playerNumber = playerNumber;
-    $("#player-number").html("" + playerNumber);
+    $("#player-name").html(window.players[parseInt(playerNumber)]);
   }
 
   function choose(pokemonID) {
