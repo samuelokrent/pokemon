@@ -32,6 +32,7 @@ class Player < ApplicationRecord
       deck: self.pokemon_cards.map(&:to_hash),
       active_card: self.active_card.to_hash,
       student: self.student?,
+      name: self.name,
     }
   end
 end
