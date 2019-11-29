@@ -143,7 +143,7 @@
 </div>
 
 <div id="message-board">
-  Player <span class="current-turn-number">1</span>, Choose your attack!
+  <span class="current-player-name">@game.current_player.name</span>, Choose your attack!
 </div>
 
 <div id="arena">
@@ -286,7 +286,7 @@
   }
 
   function setGameState(game) {
-    $(".current-turn-number").html(game.turn);
+    $(".current-player-name").html(game.players[game.turn-1].name);
     $(".card").removeClass("current-turn");
     $("#arena-card-"+game.turn).addClass("current-turn");
     for (playerIdx in game.players) {
