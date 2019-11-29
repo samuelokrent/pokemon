@@ -7,6 +7,6 @@ showChooseMessage(
   	"Way to go! HP boosted from #{@card.pokemon_base.hp} to #{@card.hp}!" :
   	"So close! The correct answer was #{@question.correct_answer}" %>'
 );
-<% if @game.player_one.has_full_deck? and @game.player_two.has_full_deck? %>
+<% if @game.decks_full? %>
   onDecksFull();
 <% end %>

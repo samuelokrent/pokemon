@@ -17,13 +17,10 @@
 <% end %>
 
 <% if @game.decks_full? %>
-  console.log("Decks full");
+  console.log("Decks are full for game <%= @game.id %>");
   <% unless has_question %>
     onDecksFull();
   <% end %>
-<% elsif @game.player_one.has_full_deck? or 
-  (@player == @game.player_one and !@game.player_two.has_full_deck?) %>
-  setPlayerState(2);
 <% else %>
-  setPlayerState(1);
+  setPlayerState(<%= @game.turn %>);
 <% end %>

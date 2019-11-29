@@ -56,14 +56,12 @@ class GamesController < ApplicationController
 
   def choose
     @pokemon = PokemonBase.find(params[:pokemon_base_id])
-    @player = params[:player_number].to_s == "1" ?
-      @game.player_one : @game.player_two
+    @player = @game.current_player
     @card = PokemonCard.create(player: @player, pokemon_base: @pokemon)
     if @player.player_type == "student"
       @question = MultipleChoiceQuestion.all.sample
     end
     @game.advance_turn
-    @game.update_state
   end
 
   def answer_mega_question

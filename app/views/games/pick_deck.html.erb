@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h1 class="display-4">
-    Player <span id="player-number">1</span>, choose your Pokemon!
+    Player <span id="player-number"><%= @game.turn %></span>, choose your Pokemon!
   </h1>
 </div>
 <table>
@@ -81,7 +81,7 @@
 </div>
 
 <script>
-  window.playerNumber = 1;
+  window.playerNumber = <%= @game.turn %>;
 
   function setPlayerState(playerNumber) {
     window.playerNumber = playerNumber;
@@ -197,6 +197,6 @@
 
   $(function() {
     setPlayerState(
-      <%= @game.player_one.pokemon_cards.count < Game.DECK_SIZE ? '1' : '2' %>);
+      <%= @game.turn %>);
   });
 </script>
