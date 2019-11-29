@@ -6,44 +6,43 @@ class GamesController < ApplicationController
   def home
   end
 
-  # GET /games
-  # GET /games.json
-  def index
-    @games = Game.all
-  end
-
-  # GET /games/1
-  # GET /games/1.json
   def show
+    @game.update_state
+    case @game.state
+    when "building_decks"
+      redirect_to pick_deck_game_path(@game)
+    when "battle"
+      redirect_to battle_game_path(@game)
+    end
   end
 
-  # GET /games/new
+  def find_or_new
+    @game = begin Game.find_by_name(params[:name]) rescue nil end
+    if @game
+      redirect_to game_path(@game)
+    else
+      redirect_to new_game_path(name: params[:name])
+    end
+  end
+
   def new
     @game = Game.new(name: params[:name])
     @game.build_player_one
     @game.build_player_two
   end
 
-  # GET /games/1/edit
-  def edit
-  end
-
-  # POST /games
-  # POST /games.json
   def create
     Rails.logger.debug game_params.inspect
     @game = Game.new(game_params)
     @game.state = "building_decks"
 
-    respond_to do |format|
-      if @game.save
-        Rails.logger.debug "SAVE"
-        @game.update_state
-        format.html { redirect_to pick_deck_game_path(@game) }
-      else
-        Rails.logger.debug "NOT SAVE: #{@game.errors.full_messages.inspect}"
-        format.html { render :new }
-      end
+    if @game.save
+      Rails.logger.debug "Created new game: #{@game.id}"
+      @game.update_state
+      redirect_to pick_deck_game_path(@game)
+    else
+      Rails.logger.debug "Could not create game: #{@game.errors.full_messages.inspect}"
+      render :new
     end
   end
 
@@ -79,35 +78,11 @@ class GamesController < ApplicationController
   end
 
   def battle
-
+    rander layout: "battle"
   end
 
   def state
     render json: @game.to_hash.to_json
-  end
-
-  # PATCH/PUT /games/1
-  # PATCH/PUT /games/1.json
-  def update
-    respond_to do |format|
-      if @game.update(game_params)
-        format.html { redirect_to @game, notice: 'Game was successfully updated.' }
-        format.json { render :show, status: :ok, location: @game }
-      else
-        format.html { render :edit }
-        format.json { render json: @game.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /games/1
-  # DELETE /games/1.json
-  def destroy
-    @game.destroy
-    respond_to do |format|
-      format.html { redirect_to games_url, notice: 'Game was successfully destroyed.' }
-      format.json { head :no_content }
-    end
   end
 
   private

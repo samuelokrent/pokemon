@@ -1,4 +1,9 @@
 <div class="jumbotron">
+  <% if @game.errors.any? %>
+    <div class="alert alert-danger" role="alert">
+      Could not create game: <%= @game.errors.full_messages.join(", ") %>
+    </div>
+  <% end %>
   <h1 class="display-4">New Game: <%= @game.name %></h1>
   <%= form_with model: @game, method: "post", url: games_path do |f| %>
     <%= f.hidden_field :name %>
