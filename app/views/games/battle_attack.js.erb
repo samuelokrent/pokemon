@@ -1,0 +1,10 @@
+var message = <% if @attacked_card.alive? %>
+    "<%= j @attack.name %> did <%= j @attack.damage(@is_super_effective) %> damage!";
+  <% else %>
+    "<%= j @attacked_card.name %> fainted!";
+  <% end %>
+<% if @is_super_effective %>
+  showMessage("It's super effective!", message);
+<% else %>
+  showMessage("<%= j @player.active_card.name %> used <%= j @attack.name %>!", message);
+<% end %>

@@ -36,6 +36,12 @@ class PokemonCard < ApplicationRecord
     (lower..upper)
   end
 
+  def make_mega
+    self.mega = true
+    self.initialize_health
+    self.save
+  end
+
   def apply_damage(damage)
     self.update_attribute(:health, [0, self.health - damage].max)
   end

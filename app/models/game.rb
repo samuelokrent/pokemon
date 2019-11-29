@@ -17,6 +17,10 @@ class Game < ApplicationRecord
     self.turn == 1 ? self.player_one : self.player_two
   end
 
+  def idle_player
+    self.turn == 1 ? self.player_two : self.player_one
+  end
+
   def update_state
     new_state = case self.state
     when "new"
@@ -27,6 +31,10 @@ class Game < ApplicationRecord
       if self.decks_full?
         "battle"
       end
+    when "battle"
+      if self.ended?
+        "ended"
+      end
     end
     if new_state and new_state != self.state
       self.update_attributes(state: new_state, turn: 1)
@@ -34,6 +42,7 @@ class Game < ApplicationRecord
   end
 
   def advance_turn
+    self.turn = 3 - self.turn
     self.update_state
     if self.state == "building_decks"
       if self.player_one.has_full_deck?
@@ -44,11 +53,16 @@ class Game < ApplicationRecord
         return
       end
     end
-    self.update_attribute(:turn, 3 - self.turn)
+    self.save
   end
 
   def ended?
     self.player_one.defeated? || self.player_two.defeated?
+  end
+
+  def winner
+    return unless self.ended?
+    self.player_one.defeated? ? self.player_two : self.player_one
   end
 
   # For development
@@ -67,6 +81,7 @@ class Game < ApplicationRecord
       state: self.state,
       turn: self.turn,
       ended: self.ended?,
+      winner: self.winner,
     }
   end
 end

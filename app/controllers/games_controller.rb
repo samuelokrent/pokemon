@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   before_action :set_game, only: [:show, :edit, :update, :destroy, 
-    :pick_deck, :choose, :answer_mega_question, :battle, :state]
+    :pick_deck, :choose, :answer_mega_question, :battle, :state, :battle_attack]
   skip_before_action :verify_authenticity_token
 
   def home
@@ -70,13 +70,22 @@ class GamesController < ApplicationController
     if params[:question_type] == "multiple-choice"
       @question = MultipleChoiceQuestion.find(params[:question_id])
       if params[:multiple_choice_answer] == @question.correct_answer
-        @card.update_attribute(:mega, true)
+        @card.make_mega
       end
     end
   end
 
   def battle
     render layout: "battle"
+  end
+
+  def battle_attack
+    @attack = Attack.find(params[:attack_id])
+    @is_super_effective = params[:is_super_effective].present?
+    @player = @game.current_player
+    @attacked_card = @game.idle_player.active_card
+    @attacked_card.apply_damage(@attack.damage(@is_super_effective))
+    @game.advance_turn
   end
 
   def state
