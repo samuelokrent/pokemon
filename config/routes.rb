@@ -11,7 +11,7 @@ Rails.application.routes.draw do
       get 'state'
     end
     collection do
-      get 'find_new'
+      get 'find_or_new'
     end
   end
 
