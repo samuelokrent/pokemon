@@ -36,10 +36,10 @@ class Game < ApplicationRecord
   def advance_turn
     self.update_state
     if self.state == "building_decks"
-      if self.@game.player_one.has_full_deck?
+      if self.player_one.has_full_deck?
         self.update_attribute(:turn, 2)
         return
-      elsif @game.player_two.has_full_deck?
+      elsif self.player_two.has_full_deck?
         self.update_attribute(:turn, 1)
         return
       end
