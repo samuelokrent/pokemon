@@ -7,8 +7,8 @@ var message = <% if @attacked_card.alive? %>
   showMessage("Way to go - it's super effective!", message);
 <% else %>
   if (window.multipleChoice) {
-    message = "So close! The correct answer was " +
-      multipleChoice.correctAnswer + ". " + message;
+    message = "So close! The correct answer was \"" +
+      multipleChoice.correctAnswer + "\". " + message;
   }
   showMessage("<%= j @player.active_card.name %> used <%= j @attack.name %>!", message);
 <% end %>
