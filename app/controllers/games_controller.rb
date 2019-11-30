@@ -13,6 +13,8 @@ class GamesController < ApplicationController
       redirect_to pick_deck_game_path(@game)
     when "battle"
       redirect_to battle_game_path(@game)
+    when "ended"
+      redirect_to battle_game_path(@game)
     end
   end
 

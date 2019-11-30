@@ -218,44 +218,21 @@
       </div>
       <div id="battle-multiple-choice">
         <div id="battle-multiple-choice-question"></div>
-        <form>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="multiple_choice_answer"
-              id="multiple-choice-1">
-            <label class="form-check-label" for="multiple-choice-1"
-              id="multiple-choice-1-label">
-              Answer 1
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="multiple_choice_answer"
-              id="multiple-choice-1">
-            <label class="form-check-label" for="multiple-choice-1"
-              id="multiple-choice-1-label">
-              Answer 1
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="multiple_choice_answer"
-              id="multiple-choice-1">
-            <label class="form-check-label" for="multiple-choice-1"
-              id="multiple-choice-1-label">
-              Answer 1
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="multiple_choice_answer"
-              id="multiple-choice-1">
-            <label class="form-check-label" for="multiple-choice-1"
-              id="multiple-choice-1-label">
-              Answer 1
-            </label>
-          </div>
-        </form>
+        <%= form_tag nil, id: "battle-multiple-choice-form" do |f| %>
+          <% (0..3).each do |i| %>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="multiple_choice_answer"
+                id="multiple-choice-<%= i %>">
+              <label class="form-check-label" for="multiple-choice-<%= i %>"
+                id="multiple-choice-<%= i %>-label">
+              </label>
+            </div>
+          <% end %>
+        <% end %>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal"
-          id="battle-multiple-choice-modal-ok-btn">
+          id="battle-multiple-choice-modal-ok-btn" onclick="submitMultipleChoice();">
           Go!
         </button>
       </div>
@@ -266,6 +243,7 @@
 <script>
 
   window.game = null;
+  window.multipleChoiceQuestion = {};
 
   function showMessage(title, message) {
     $("#battle-message-modal-title").html(title);
@@ -287,9 +265,13 @@
     });
   }
 
+  function currentPlayer() {
+    return game.players[game.turn-1];
+  }
+
   function setGameState(game) {
     window.game = game;
-    $(".current-player-name").html(game.players[game.turn-1].name);
+    $(".current-player-name").html(currentPlayer().name);
     $(".card").removeClass("current-turn");
     $("#arena-card-"+game.turn).addClass("current-turn");
     var cardOneID = $("#arena-card-1").data("card-id");
@@ -340,8 +322,40 @@
   }
 
   function chooseAttack(attackID) {
-    // TODO fill in logic
-    attack(attackID, false);
+    if (currentPlayer().student) {
+      showMultipleChoice(
+        game.question.question,
+        game.question.answers,
+        game.question.correct_answer,
+        attackID);
+    } else {
+      attack(attackID, false);
+    }
+  }
+
+  function showMultipleChoice(question, answers, correctAnswer, attackID) {
+    window.multipleChoice = {
+      attackID: attackID,
+      correctAnswer: correctAnswer,
+      chosenAnswer: null,
+    };
+    $("#battle-multiple-choice-question").html(question);
+    for (var idx in answers) {
+      var answer = answers[idx];
+      $("#multiple-choice-" + idx + "-label").html(answer);
+      $("#multiple-choice-" + idx).val(answer).unbind("click").click(
+        function() {
+          multipleChoice.chosenAnswer = $(this).val();
+        }
+      ).prop("checked", false);
+    }
+    $("#battle-multiple-choice-modal").modal();
+  }
+
+  function submitMultipleChoice() {
+    attack(multipleChoice.attackID,
+        multipleChoice.chosenAnswer == multipleChoice.correctAnswer);
+    window.multipleChoice = {};
   }
 
   function attack(attackID, isSuperEffective) {
