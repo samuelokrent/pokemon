@@ -6,7 +6,7 @@ var message = <% if @attacked_card.alive? %>
 <% if @is_super_effective %>
   showMessage("Way to go - it's super effective!", message);
 <% else %>
-  if (window.multipleChoiceQuestion) {
+  if (window.multipleChoice) {
     message = "So close! The correct answer was " +
       multipleChoice.correctAnswer + ". " + message;
   }
