@@ -147,7 +147,7 @@
 </div>
 
 <div id="arena">
-  <div id="arena-card-1" class="card current-turn" data-card-id="<%= @game.player_one.active_card.id %>">
+  <div id="arena-card-1" class="card current-turn card-<%= @game.player_one.active_card.id %>">
     <div class="card-stats">
       <div class="card-stat card-type"><%= @game.player_one.active_card.type_one %></div>
       <div class="card-stat card-hp">
@@ -162,7 +162,7 @@
     <button type="button" class="btn btn-primary attack-btn attack-btn-1"></button><br>
     <button type="button" class="btn btn-primary attack-btn attack-btn-2"></button>
   </div>
-  <div id="arena-card-2" class="card" data-card-id="<%= @game.player_two.active_card.id %>">
+  <div id="arena-card-2" class="card card-<%= @game.player_two.active_card.id %>">
     <div class="card-stats">
       <div class="card-stat card-type"><%= @game.player_two.active_card.type_one %></div>
       <div class="card-stat card-hp">
@@ -292,8 +292,14 @@
     $(".current-player-name").html(game.players[game.turn-1].name);
     $(".card").removeClass("current-turn");
     $("#arena-card-"+game.turn).addClass("current-turn");
-    $("#arena-card-1").data("card-id", game.players[0].active_card.id);
-    $("#arena-card-2").data("card-id", game.players[1].active_card.id);
+    var cardOneID = $("#arena-card-1").data("card-id");
+    var cardTwoID = $("#arena-card-2").data("card-id");
+    $("#arena-card-1").removeClass("card-"+cardOneID).
+      addClass("card-"+game.players[0].active_card.id).
+      data("card-id", game.players[0].active_card.id);
+    $("#arena-card-2").removeClass("card-"+cardTwoID).
+      addClass("card-"+game.players[1].active_card.id).
+      data("card-id", game.players[1].active_card.id);
     for (playerIdx in game.players) {
     	var deck = game.players[playerIdx].deck;
     	for (cardIdx in deck) {
@@ -306,7 +312,7 @@
   }
 
   function setCard(card, isCurrentTurn) {
-    $card = $(".card[data-card-id="+card.id+"]");
+    $card = $(".card[data-card-id="+card.id+"], .card-"+card.id);
     $card.find("img").prop("src", "/assets/"+card.image);
     $card.find(".health").css("width", ""+((card.health*100)/card.hp)+"%");
     if (card.alive) {
