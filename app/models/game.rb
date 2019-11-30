@@ -79,6 +79,7 @@ class Game < ApplicationRecord
         self.player_two.to_hash,
       ],
       state: self.state,
+      question: MultipleChoiceQuestion.all.sample.to_hash,
       turn: self.turn,
       ended: self.ended?,
       winner: self.winner,
