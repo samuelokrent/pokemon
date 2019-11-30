@@ -307,7 +307,9 @@
     	}
     }
     if (game.ended) {
-      showMessage(game.winner.name + " wins!", game.winner.name + " is true a Pokemon master!");
+      setTimeout(function() {
+        showMessage(game.winner.name + " wins!", game.winner.name + " is true a Pokemon master!");
+      }, 2000);
     }
   }
 
