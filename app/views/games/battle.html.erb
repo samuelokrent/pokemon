@@ -243,7 +243,7 @@
 <script>
 
   window.game = null;
-  window.multipleChoiceQuestion = {};
+  window.multipleChoiceQuestion = null;
 
   function showMessage(title, message) {
     $("#battle-message-modal-title").html(title);
@@ -252,6 +252,7 @@
   }
 
   function startTurn() {
+    window.multipleChoiceQuestion = null;
     $.ajax({
       url: "<%= state_game_path(@game) %>",
       type: "GET",
@@ -290,7 +291,8 @@
     }
     if (game.ended) {
       setTimeout(function() {
-        showMessage(game.winner.name + " wins!", game.winner.name + " is true a Pokemon master!");
+        showMessage(game.winner.name + " wins!",
+          game.winner.name + " is true a Pokemon master!");
       }, 2000);
     }
   }
@@ -355,7 +357,6 @@
   function submitMultipleChoice() {
     attack(multipleChoice.attackID,
         multipleChoice.chosenAnswer == multipleChoice.correctAnswer);
-    window.multipleChoice = {};
   }
 
   function attack(attackID, isSuperEffective) {

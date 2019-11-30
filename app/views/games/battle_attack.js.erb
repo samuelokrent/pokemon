@@ -4,7 +4,11 @@ var message = <% if @attacked_card.alive? %>
     "<%= j @attacked_card.name %> fainted!";
   <% end %>
 <% if @is_super_effective %>
-  showMessage("It's super effective!", message);
+  showMessage("Way to go - it's super effective!", message);
 <% else %>
+  if (window.multipleChoiceQuestion) {
+    message = "So close! The correct answer was " +
+      multipleChoice.correctAnswer + ". " + message;
+  }
   showMessage("<%= j @player.active_card.name %> used <%= j @attack.name %>!", message);
 <% end %>
