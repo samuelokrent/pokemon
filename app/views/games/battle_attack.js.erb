@@ -1,5 +1,5 @@
 var message = <% if @attacked_card.alive? %>
-    "<%= j @attack.name %> did <%= j @attack.damage(@is_super_effective) %> damage!";
+    "<%= j @attack.name %> did <%= j @attack.damage(@is_super_effective).to_i %> damage!";
   <% else %>
     "<%= j @attacked_card.name %> fainted!";
   <% end %>
