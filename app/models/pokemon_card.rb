@@ -19,6 +19,10 @@ class PokemonCard < ApplicationRecord
       self.pokemon_base.hp
   end
 
+  def full_name
+    self.mega ? "Mega #{self.name}" : self.name
+  end
+
   def initialize_attacks
     attack_bases = AttackBase.where(attack_type: self.type_one).sample(2)
     attack_bases.each do |ab|
@@ -62,7 +66,7 @@ class PokemonCard < ApplicationRecord
     {
       id: self.id,
       player_id: self.player.id,
-      name: self.name,
+      name: self.full_name,
       type: self.type_one,
       hp: self.hp,
       health: self.health,
