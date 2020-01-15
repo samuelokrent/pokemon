@@ -129,3 +129,33 @@ Wake up Snorlax
 Scare the birds out of the trees
 Have a yelling competition
 Sing
+
+There are 6 Bulbasaurs. Each Bulbasaur has 4 legs. How many legs are there?
+24
+12
+20
+60
+
+In a Pokemon battle, each trainer is allowed 6 starter Pokemon. A game involves 2 trainers. How many starter Pokemon are there in total?
+12
+18
+20
+22
+
+Marowaks like to walk together. A group of Marowaks are walking in 6 rows, with 6 Marowaks in each row. How many Marowaks are there?
+36
+22
+18
+29
+
+Ash saw a Zapdos! While he was taking out a Pokeball to catch it, it flapped its wings and took off. Why couldn't Ash catch the Zapdos?
+It flew away
+It was too big
+He had too many Pokemon already
+He didn't want a Zapdos.
+
+Ash and Brock came to a bridge they had to cross. Ash had a Blastoise with him. Blastoise is big and heavy. Ash tested the bridge with his foot and thought it wasn't strong enough to hold all of them. Blastoise had to wait where he was while Ash and Brock crossed the bridge. Why couldn't Blastoise come with them?
+He was too heavy for the bridge to hold him
+Because he was busy swimming
+Because he was playing with Venusaur
+Because a Snorlax was in the way
