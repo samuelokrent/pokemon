@@ -245,6 +245,7 @@
   window.game = null;
   window.multipleChoice = null;
 
+
   var POTION_PERCENTAGE = 0.4;
 
   function showMessage(title, message) {
@@ -363,6 +364,7 @@
   }
 
   function attack(attackID, isSuperEffective) {
+    showedPotion = false;
     var url = "<%= battle_attack_game_path(@game) %>?" +
       "attack_id=" + attackID;
     if (isSuperEffective) url += "&is_super_effective=true";
@@ -378,10 +380,14 @@
     });
   }
 
+  var showedPotion = false;
   function showPotion() {
     if (game.ended) return;
-    if (Math.random() > POTION_PERCENTAGE) return;
+    var rand = Math.random();
+    console.log("Potion random: " + rand);
+    if (rand > POTION_PERCENTAGE) return;
     if (!currentPlayer().student) return;
+    showedPotion = true;
     showMessage("Way to go - you earned a potion!", "Potion healed by this much");
   }
 
