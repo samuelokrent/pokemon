@@ -109,12 +109,37 @@
     float: right;
   }
 
+  #battle-potion-question {
+    text-align: center;
+    font-size: 48px;
+    padding: 20px;
+  }
+
   #battle-multiple-choice {
     padding: 20px;
   }
 
   #battle-multiple-choice-question {
     margin-bottom: 10px;
+  }
+
+  #battle-potion-input {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    height: 48px;
+    text-align: center;
+    font-size: 48px;
+    width: 120px;
+  }
+
+  #battle-potion-enter-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
 </style>
@@ -253,8 +278,9 @@
         </button>
       </div>
       <div id="battle-potion">
-        <div id="battle-potion-question">6 X 8</div>
+        <div id="battle-potion-question"><span id="battle-potion-number">6</span> X <span id="battle-potion-counter"></span></div>
         <input type="text" id="battle-potion-input"/>
+        <p id="battle-potion-enter-text">Press enter to submit</p>
       </div>
     </div>
   </div>
@@ -410,7 +436,42 @@
     console.log("Potion random: " + rand);
     if (rand > POTION_PERCENTAGE) return;
     showedPotion = true;
+    startPotionAttempt();
+  }
+
+  var POTION_NUMBERS = [6, 7];
+  var potionNumber = 0;
+  var potionCounter = 0;
+  var potionCorrect = 0;
+
+  function advancePotionCount() {
+    potionCounter++;
+    $("#battle-potion-enter-text").val('');
+    if (potionCounter == 10) {
+      // TODO submit
+      console.log("Number correct: " + potionCorrect);
+    } else {
+      $("#battle-potion-counter").html(potionCounter);
+      $("#battle-potion-input").unbind("keyup").on("keyup", function(e) {
+        if (e.keyCode == 13) {
+          console.log("Answered: " + $("#battle-potion-input").val() + ", " +
+            "Correct: " + potionNumber * potionCounter);
+          if (parseInt($("#battle-potion-input").val()) == potionNumber * potionCounter) {
+            potionCorrect++;
+          }
+          advancePotionCount();
+        }
+      });
+    }
+  }
+
+  function startPotionAttempt() {
+    potionCounter = 0;
+    potionCorrect = 0;
+    potionNumber = POTION_NUMBERS[parseInt(Math.random() * POTION_NUMBERS.length)];
+    $("#battle-potion-number").html(potionNumber);
     $("#battle-potion-modal").modal();
+    advancePotionCount();
   }
 
   $(function() {
