@@ -90,6 +90,13 @@ class GamesController < ApplicationController
     @game.advance_turn
   end
 
+  def submit_potion
+    @number_correct = params[:number_correct]
+    @player = @game.current_player
+    @active_card = @player.active_card
+    @active_card.apply_healing(@number_correct)
+  end
+
   def state
     render json: @game.to_hash.to_json
   end

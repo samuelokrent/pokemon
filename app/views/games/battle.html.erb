@@ -273,7 +273,7 @@
         <h5 class="modal-title" id="battle-multiple-choice-modal-label">
           <span id="battle-multiple-choice-modal-title">Answer correctly to earn a potion!</span>
         </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button id="battle-close-potion" type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -446,10 +446,22 @@
 
   function advancePotionCount() {
     potionCounter++;
-    $("#battle-potion-enter-text").val('');
+    $("#battle-potion-input").val('');
     if (potionCounter == 10) {
-      // TODO submit
       console.log("Number correct: " + potionCorrect);
+      $("#battle-close-potion").click();
+      var url = "<%= submit_potion_game_path(@game) %>?" +
+        "number_correct=" + potionCorrect;
+      $.ajax({
+        url: url,
+        type: "GET",
+        error: function(xhr, status) {
+          alert("Error during potion submit: " + status);
+        },
+        success: function() {
+          console.log("Success");
+        },
+      });
     } else {
       $("#battle-potion-counter").html(potionCounter);
       $("#battle-potion-input").unbind("keyup").on("keyup", function(e) {

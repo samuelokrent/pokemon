@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       post 'answer_mega_question'
       get 'battle'
       get 'battle_attack'
+      get 'submit_potion'
       get 'state'
     end
     collection do

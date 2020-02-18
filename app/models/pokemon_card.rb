@@ -12,6 +12,7 @@ class PokemonCard < ApplicationRecord
   MEGA_HP_MULTIPLIER = 1.3
   LOWER_BOUND_ATTACK_POWER = 0.25
   UPPER_BOUND_ATTACK_POWER = 0.35
+  HEALING_MULTIPLER = 10
 
   def hp
     self.mega ?
@@ -51,7 +52,7 @@ class PokemonCard < ApplicationRecord
   end
 
   def apply_healing(amount)
-    self.update_attribute(:health, [self.hp, self.health + amount].min)
+    self.update_attribute(:health, [self.hp, self.health + (amount * HEALING_MULTIPLER)].min)
   end
 
   def alive?
