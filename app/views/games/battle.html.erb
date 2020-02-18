@@ -245,6 +245,8 @@
   window.game = null;
   window.multipleChoice = null;
 
+  var POTION_PERCENTAGE = 0.4;
+
   function showMessage(title, message) {
     $("#battle-message-modal-title").html(title);
     $("#battle-message").html(message);
@@ -262,6 +264,7 @@
       success: function(res) {
         console.log("Success", res);
         setGameState(res);
+        showPotion();
       },
     });
   }
@@ -373,6 +376,12 @@
         console.log("Success");
       },
     });
+  }
+
+  function showPotion() {
+    if (game.ended) return;
+    if (Math.random() > POTION_PERCENTAGE) return;
+    showMessage("Way to go - you earned a potion!", "Potion healed by this much");
   }
 
   $(function() {
