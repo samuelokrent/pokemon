@@ -91,7 +91,7 @@ class GamesController < ApplicationController
   end
 
   def submit_potion
-    @number_correct = params[:number_correct]
+    @number_correct = params[:number_correct].to_i
     @player = @game.current_player
     @active_card = @player.active_card
     @active_card.apply_healing(@number_correct)
