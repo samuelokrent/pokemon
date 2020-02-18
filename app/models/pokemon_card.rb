@@ -52,7 +52,7 @@ class PokemonCard < ApplicationRecord
   end
 
   def apply_healing(amount)
-    self.update_attribute(:health, [self.hp, self.health + (amount * HEALING_MULTIPLER)].min)
+    self.update_attribute(:health, [self.hp, self.health + (amount.to_i * HEALING_MULTIPLER)].min)
   end
 
   def alive?
