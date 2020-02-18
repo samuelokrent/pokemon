@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :edit, :update, :destroy, 
+  before_action :set_game, only: [:show, :edit, :update, :destroy, :submit_potion,
     :pick_deck, :choose, :answer_mega_question, :battle, :state, :battle_attack]
   skip_before_action :verify_authenticity_token
 
