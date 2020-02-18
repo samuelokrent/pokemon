@@ -264,7 +264,7 @@
       success: function(res) {
         console.log("Success", res);
         setGameState(res);
-        showPotion();
+        setTimeout(showPotion(), 2000);
       },
     });
   }
@@ -381,6 +381,7 @@
   function showPotion() {
     if (game.ended) return;
     if (Math.random() > POTION_PERCENTAGE) return;
+    if (!currentPlayer().student) return;
     showMessage("Way to go - you earned a potion!", "Potion healed by this much");
   }
 
