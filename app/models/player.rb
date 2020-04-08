@@ -12,6 +12,10 @@ class Player < ApplicationRecord
   end
 
   def active_card
+    if self.active_card_id.present? &&
+       self.pokemon_cards.select(&:alive?).map(&:id).include?(self.active_card_id)
+      return PokemonCard.find(self.active_card_id) 
+    end
   	self.pokemon_cards.select(&:alive?).first || self.pokemon_cards.last
   end
 
