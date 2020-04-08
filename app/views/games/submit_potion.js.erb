@@ -1,7 +1,7 @@
-<% if @number_correct > 0 %>
-  showMessage("Way to go - you earned <%= @number_correct %> potions!",
-    "<%= j @active_card.name %> gained <%= @number_correct * PokemonCard::HEALING_MULTIPLER %> health!");
+<% if @exchanged %>
+  showMessage("<%= j @active_card.name %>, I choose you!",
+    "Way to go - You called <%= j @active_card.name %>  into battle!");
 <% else %>
-  showMessage("Nice try!", "Keep up the times-table practice!");
+  showMessage("Keep it up!", "You got <%= @number_correct %> right. Try again!");
 <% end %>
  

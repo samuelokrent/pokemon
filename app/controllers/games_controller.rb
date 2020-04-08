@@ -93,8 +93,16 @@ class GamesController < ApplicationController
   def submit_potion
     @number_correct = params[:number_correct].to_i
     @player = @game.current_player
+    if @number_correct >= params[:min_correct].to_i
+      @player.update_attribute(:active_card_id, params[:exchange_pokemon_card_id])
+      @player.reload
+      @exchanged = true
+    else
+      @exchanged = false
+    end
     @active_card = @player.active_card
-    @active_card.apply_healing(@number_correct)
+    # From when potions were potions.
+    # @active_card.apply_healing(@number_correct)
   end
 
   def state

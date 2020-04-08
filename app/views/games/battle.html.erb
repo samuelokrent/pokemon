@@ -276,7 +276,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="battle-multiple-choice-modal-label">
-          <span id="battle-multiple-choice-modal-title">Answer correctly to earn a potion!</span>
+          <span id="battle-multiple-choice-modal-title">Answer all questions correctly to exchange Pokemon!</span>
         </h5>
         <button id="battle-close-potion" type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -316,7 +316,8 @@
       success: function(res) {
         console.log("Success", res);
         setGameState(res);
-        setTimeout(showPotion, 2000);
+        // From when potions were potions.
+        // setTimeout(showPotion, 2000);
       },
     });
   }
@@ -449,9 +450,11 @@
   }
 
   var POTION_NUMBERS = [6, 7, 8];
+  var POTION_MIN_CORRECT = 9;
   var potionNumber = 0;
   var potionCounter = 0;
   var potionCorrect = 0;
+  var exchangePokemonID = null;
 
   function advancePotionCount() {
     potionCounter++;
@@ -460,7 +463,9 @@
       console.log("Number correct: " + potionCorrect);
       $("#battle-close-potion").click();
       var url = "<%= submit_potion_game_path(@game) %>?" +
-        "number_correct=" + potionCorrect;
+        "number_correct=" + potionCorrect +
+        "min_correct=" + POTION_MIN_CORRECT +
+        "exchange_pokemon_card_id=" + exchangePokemonID;
       $.ajax({
         url: url,
         type: "GET",
@@ -497,6 +502,8 @@
 
   function attemptExchange(cardID) {
     console.log("Attempting exchange: " + cardID);
+    exchangePokemonID = cardID;
+    startPotionAttempt();
   }
 
   $(function() {
