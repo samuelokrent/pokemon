@@ -464,8 +464,8 @@
       $("#battle-close-potion").click();
       var url = "<%= submit_potion_game_path(@game) %>?" +
         "number_correct=" + potionCorrect +
-        "min_correct=" + POTION_MIN_CORRECT +
-        "exchange_pokemon_card_id=" + exchangePokemonID;
+        "&min_correct=" + POTION_MIN_CORRECT +
+        "&exchange_pokemon_card_id=" + exchangePokemonID;
       $.ajax({
         url: url,
         type: "GET",
