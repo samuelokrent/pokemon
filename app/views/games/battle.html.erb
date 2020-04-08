@@ -345,9 +345,13 @@
         setCard(deck[cardIdx], playerIdx == game.turn - 1);
     	}
     }
-    $(".deck .card").unbind("click");
+    $(".deck .card").unbind("click").unbind("mouseover").unbind("mouseleave");
     $("#deck-"+game.turn+" .card:not(.dead)").click(function() {
       attemptExchange($(this).data("card-id"));
+    }).on("mouseover", function() {
+      $(this).css("background", "#33aa33");
+    }).on("mouseleave", function() {
+      $(this).css("background", "#ffffff");
     });
     if (game.ended) {
       setTimeout(function() {
