@@ -28,12 +28,6 @@ Ekans loves to eat Pidgey eggs! He found 4 Pidgey nests, and each one had 3 Pidg
 16
 7
 
-Flareon's Flash Fire attack does 30 damage. Umbreon's Moonlight Fang attack does 15 damage, and her Inner Focus attack does 20 damage. What does more damage, Flareon's Flash Fire alone, or Umbreon's Moonlight Fang plus her Inner Focus attack?
-Umbreon's combined attack
-Flareon's Flash Fire
-Both are the same
-Meowth's Payday attack
-
 Brock has 6 Pokemon trainer badges. To be recognized as a Pokemon master at Saffron City Gym, he would need to have twice as many badges. How many badges does a Pokemon trainer need to have to be recognized as a master at Saffron City Gym?
 12
 7
@@ -70,12 +64,6 @@ To avoid getting dented on rocks
 To bash against opponent's Pokeballs
 So they don't rust
 
-Ash captured a Ninetales today! He had just left Lavender Town when he saw it grazing on some grass. Quickly, he pulled out a Pokeball and said, "Pikachu, I choose you!". Ninetales fainted after Pikachu used Stun on him. Ash pulled out another Pokeball and captured Ninetales, and the whole team celebrated! Which of these things happened first?
-Ash leaves Lavender Town
-Ash captures Ninetales
-Pikachu uses Stun
-Ninetales faints
-
 Ash tried to capture Mewtwo by fighting it with one of his best Pokemon. He chose Bulbasaur, planning to use Vine Whip to defeat Mewtwo. Bulbasaur took one look at Mewtwo and tried to run from the fight, though. Mewtwo was one of the strongest Pokemon there was, and Bulbasaur was worried he couldn't win. Ash eventually had to call him back into the Pokeball. Why didn't Bulbasaur fight Mewtwo?
 He was too scared of him
 The Pokeball wouldn't open
@@ -93,12 +81,6 @@ Helping it
 Hurting it
 Playing with it
 Teaching it
-
-One day Pikachu decided that he didn't want to fight other Pokemon anymore. He thought about what he wanted to do instead. He decided he would like to be a detective. So, he went to detective school and studied hard for 2 years. When he graduated, he was called Detective Pikachu. From then on he helped solve mysteries in Pallet Town. What happens right after Pikachu decides to be a detective?
-Pickahu goes to detective school
-People call him Detective Pikachu
-Pikachu doesn't want to fight other Pokemon
-Pikachu buys new clothes
 
 Fire type Pokemon and Water type Pokemon are pretty different. Fire type Pokemon can have bad tempers, while Water type Pokemon are very easy going. Fire type Pokemon like hot, dry weather, while Water Type Pokemon prefer the rain. However, both Fire type and Water type Pokemon love eating Pokemon food! But Water type Pokemon enjoy their food with a Pokemon soda, while Fire type Pokemon don't. What is a similarity between Fire type and Water type Pokemon?
 They both like eating Pokemon food
@@ -123,12 +105,6 @@ Umbreon
 Flareon
 Glaceon
 Jolteon
-
-Ash, Misty, and Brock were walking along the road when they encountered a giant Snorlax laying in their path. They could hear a very loud snoring sound. They had to keep walking along the road, but Snorlax wouldn't move. They tapped him, then banged on his side with their fists. Then they yelled as loud as they could, but still Snorlax didn't move. Luckily, they found another path through the trees that went around Snorlax. What were they trying to do by yelling?
-Wake up Snorlax
-Scare the birds out of the trees
-Have a yelling competition
-Sing
 
 There are 6 Bulbasaurs. Each Bulbasaur has 4 legs. How many legs are there?
 24
@@ -220,7 +196,7 @@ Alakazam's are superstitious Pokemon. They love the number 7! For good luck, Ala
 64
 51
 
-Weevil is a tiny pokemon. He's small enough to fit on your hand, or in your pocket. Tentacruel is a giant Pokemon - he's bigger than a cruise ship! Weevil wants to be big one day. He looks up to Tentacruel, because he's so big. Big Pokemon like Tentacruel, Blastoise, and Venusaur are some of Weevil's heroes. How would you describe how Weevil feels about Tentacruel?
+Weedle is a tiny pokemon. He's small enough to fit on your hand, or in your pocket. Tentacruel is a giant Pokemon - he's bigger than a cruise ship! Weevil wants to be big one day. He looks up to Tentacruel, because he's so big. Big Pokemon like Tentacruel, Blastoise, and Venusaur are some of Weevil's heroes. How would you describe how Weevil feels about Tentacruel?
 He admires him.
 He's afraid of him.
 He thinks he's funny.
@@ -237,3 +213,153 @@ Sing a song.
 Dance a dance.
 Ask to play a game.
 Throw a cake at someone.
+
+Have you ever wondered how an official Pokemon battle starts? This is how: First you walk up to the front door of the gym and ring the bell. Then, you find another trainer who has as many badges as you do. Next, you battle! Which of these steps are in the right order?
+Ring the bell, find a trainer, battle.
+Find a trainer, battle, Ring the bell.
+Wake up, brush teeth, battle.
+Ring the bell, say hi to Meowth, battle.
+
+Pokemon come in all shapes and sizes! Slowpoke weights 42 lbs. Cubone weighs 14 lbs. Entei weighs 320 lbs. Which of these pokemon weighs the least?
+Cubone
+Slowpoke
+Entei
+They all weigh the same
+
+Some Pokemon are made to run, and they're a lot faster than other Pokemon. Ninetales can run at 20 miles per hour. Eevee can run at 10 mph. Snorlax can only run at 1/2 a mile per hour. Who runs the fastest?
+Ninetales
+Eevee
+Snorlax
+Meowth
+
+Ash and Misty are making Pokemon food to feed their Pokemon. They both make 1 lb. of Pokemon food. Ash has 3 Pokemon. If he divides the Pokemon food evenly, how much food will each Pokemon get?
+3 lbs.
+1 lb.
+1/3 lb.
+1/6 lb.
+
+Ash and Misty are making Pokemon food to feed their Pokemon. They both make 1 lb. of Pokemon food. Ash has 3 Pokemon, and Misty has 6 Pokemon. If Ash divides his food evenly between his 3 Pokemon, and Misty divides her food evenly between her 6 Pokemon, whose Pokemon get more food each?
+Ash's Pokemon
+Misty's Pokemon
+Meowth
+They both get the same amount.
+
+Gary is training his Pidgeotto. He trains him by throwing sticks high in the air, and seeing how many sticks Pidgeotto can catch before they hit the ground. Gary throws 20 sticks in total into the air. If 5 sticks hit the ground, how many sticks did Pidgeotto catch?
+15
+5
+10
+20
+
+Pokemon live in all kinds of places. Pidgeotto's make nests in trees. Kakuna's also live in trees, but not in nests; instead they hang off the edges of branches. Diglett's burrow in the dirt and live in holes. Tentacool's live in the water near seashores. Which kind of Pokemon lives underground?
+Diglett
+Tentacool
+Pidgeotto
+Kakuna
+
+Do you know what an Onix looks like? Onix is a Pokemon that looks like a big snake, only its body is made of a chain of rocks. One Onix's body is made of 8 rocks. If there are 3 Onix's, how many rocks are they made of all together?
+24
+16
+8
+12
+
+Ash, Misty, and Brock went on adventure. Misty's Pokemon, Togepi, wanted to come with them. Misty told Togepi she would like her to come on the adventure, but she was worried it would be too dangerous. For that reason, Misty told Togepi she had to stay home. The three friends set off on their journey. They were walking for over an hour when they decided to stop for lunch. As Misty was pulling their lunch out of her bag, out tumbled Togepi! "Togepi!" Misty said, "I told you to stay at home!" Misty was upset at first, but she quickly forgave Togepi and they all ate lunch happily together. How did Togepi come along on the journey?
+She hid in Misty's bag.
+She got a ride on Vulpix's back.
+She walked alongside them.
+She climbed up a tree.
+
+Misty loves to read. She's often found with her nose buried in a book. One day, she and her friends were in the woods searching for Lickatungs. None of the friends could find any, though! After an hour, they had almost given up. Then Misty saw a certain mark on the trunk of a tree. She told her friends that it meant a Lickatung was near. Following similar signs on the ground and nearby trees, she led her friends all the way to a group of Licktaungs that were dozing in the grass. Excitedly, she pulled out a Pokeball and caught one. Misty's friends were very impressed, and asked her how she knew to follow the marks she saw on the trees and in the grass. Proudly, Misty showed her friends a book she had been carrying, called "How to Find Lickatungs in the Forest". How did Misty know how to find the Lickatungs?
+She read about it in a book.
+She learned from her aunt.
+She was just lucky.
+Meowth told her how.
+
+It's hard to catch a wild Vulpix! When she sees a new person, she tends to run away. Some Pokemon are very curious and outgoing, and will come up to you even if you're not searching for them. But even with other Pokemon, Vulpix is slow to make new friends. What word describes Vulpix?
+Shy
+Bold
+Athletic
+Playful
+
+Charamander and Weedle decided to race! During the race, Charamander ran 1/2 of a mile, and Weedle ran 1/3 of a mile. Who ran further?
+Charamander
+Weedle
+Meowth
+They ran the same distance.
+
+Do you know what it means for something to be dense? If something is dense, it means it's heavy and small. Haunter is a ghost, and he can float! He's pretty big, but he's lighter than a balloon, and can blow away in a breeze. Geodude, on the other hand, is small and made of rock, so he's very heavy - too heavy to hold in your arms. Who is denser?
+Geodude
+Haunter
+Neither
+Meowth
+
+Ash and Brock are heading to Vermilion Gym. On the way there, Brock realized he forgot a book that he wanted to bring at home. Brock told Ash to go ahead without him, and that he would meet him at the gym. Ash kept walking, and in a few minutes reached Cinnabar Gym. When he walked in the door, he saw Gary waiting for him. Ash greeted Gary and they began talking about the Pokemon battles they wanted to have. Who got to Cinnabar Gym first?
+Gary
+Ash
+Brock
+Misty
+
+A Pokedex is a very cool device! It is a small, hand-held computer that holds information on a lot of Pokemon. Ash's Pokedex holds 100 Pokemon now. If he downloads 100 more Pokemon onto it, how many Pokemon will it hold in total?
+200
+100
+120
+300
+
+Spynaraks are like spiders - they have 8 legs! If there are 6 Spynaraks, how many legs do they have in total?
+48
+49
+36
+56
+
+Spynaraks are like spiders - they have 8 eyes! If there are 7 Spynaraks, how many eyes do they have in total?
+56
+49
+59
+48
+
+Pokemon come in all shapes and sizes! Geodude and Ekans are pretty easy to tell apart. While they both have 2 eyes, Geodude has 2 arms, and Ekans has no arms at all! However, they both have mouths, and use them to smile. What is a difference between Geodude and Ekans?
+Geodude has arms and Ekans does not.
+Geodude likes to smile and Ekans does not.
+Ekans has more eyes than Geodude.
+Geodude is twice as tall as Ekans.
+
+Grass type Pokemon need a lot of fresh air and sunlight, just like grass! When a Grass type Pokemon is inside for too long, they can start to feel tired and cranky. Bulbasaur is a grass type Pokemon. One day, he spent the whole day inside, training for Pokemon battles. By the end of the day he didn't want to be near any of the other Pokemon, and all he wanted to do was go to bed. Why do you think Bulbasaur felt that way?
+He needed to spend time outside.
+He was hungry.
+He wasn't getting along with Pikachu.
+He was anxious to battle.
+
+Pokemon are just like people; they need all the same things we do. Pokemon need to eat healthy diets, get enough sleep, and go outside to excercise. They need to spend time with their friends, as well as take some time alone. It's good for them to play games, and it's good for a trainer to show them they care about them. What's one thing a Pokemon doesn't need to be healthy?
+Lots of toys.
+Time with friends.
+Excercise and healthy food.
+Time alone.
+
+Ash is walking around Pallet Town, searching for Pokemon. He's looking for a Caterpie! Caterpie's love thick grass, so he heads for the biggest fields with the thickest grass. Immediately he finds several Weedle's, but that's not what he's looking for. A couple Pidgey's fly overhead, but he doesn't bother trying to catch them. He pulls out his flashlight to check underneath a big rock, and there it is! A Caterpie! He quickly pulls out a Pokeball to catch it. What Pokemon doesn't Ash see?
+Diglett
+Caterpie
+Pidgey
+Weedle
+
+A Weedle's body is made of 4 different segments. If there are 3 Weedles, how many body segments are there in total?
+12
+15
+16
+18
+
+Ash, Brock, Pikachu, and Charizard are searching for an Onix. Their search has taken them to the back of a long, dark cave. This far in, there's hardly any light. From even farther into the cave, they hear some pebbles clatter. Everyone gets nervous, because they can't see anything! Quickly, Charizard blows a jet of fire into the air over their heads, lighting up the whole cave. Immediately, they can see again. From the direction the noise came from, they see a tiny mouse scampering away into a crack. The friends look at each other and laugh. There was nothing to be scared of! Why did Charizard breathe fire?
+To help them see.
+To catch the Onix.
+To cook the mouse.
+To frighten Pikachu.
+
+Glaceon is an ice-type Pokemon. Her favorite foods are ice cream, popsicles, and iced tea. Flareon is a fire-type Pokemon. Her favorite foods are spicy peppers, hot cocoa. How would you categorize Glaceon's and Flareon's favorite foods?
+Glaceon likes cold foods, Flareon likes hot foods.
+Glaceon likes vegetables, Flareon likes junk food.
+Glaceon likes sandwiches, Flareon likes tacos.
+Glaceon likes sour foods, Flareon likes sweet foods.
+
+Do you know how to put a Pokemon to sleep? Pokemon fall asleep when they hear a special lullaby. THe lullaby is 10 seconds long. You need to sing it 3 times to get them to fall asleep. How long do you have to sing to put a Pokemon to sleep?
+30 seconds
+10 seconds
+20 seconds
+60 seconds
