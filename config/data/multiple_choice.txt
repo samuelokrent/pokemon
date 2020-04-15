@@ -233,9 +233,9 @@ Snorlax
 Meowth
 
 Ash and Misty are making Pokemon food to feed their Pokemon. They both make 1 lb. of Pokemon food. Ash has 3 Pokemon. If he divides the Pokemon food evenly, how much food will each Pokemon get?
+1/3 lb.
 3 lbs.
 1 lb.
-1/3 lb.
 1/6 lb.
 
 Ash and Misty are making Pokemon food to feed their Pokemon. They both make 1 lb. of Pokemon food. Ash has 3 Pokemon, and Misty has 6 Pokemon. If Ash divides his food evenly between his 3 Pokemon, and Misty divides her food evenly between her 6 Pokemon, whose Pokemon get more food each?
