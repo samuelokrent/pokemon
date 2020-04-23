@@ -58,7 +58,7 @@ Its HP
 Its picture
 Its attacks
 
-Do you know how a Pokeball works? Inside the ball is an empty space that can contain a small version of a Pokemon. The shell of the ball is made of a very hard material - it needs to be hard because some Pokemon are very powerful, and could attack their way out otherwise! There is a clasp on the front of the Pokeball that keeps the ball shut until it's time to battle. When a Pokemon master chooses a Pokemon, they press a button on the front of the Pokeball the releases the clasp and allows the Pokemon to appear outside of the ball. Why do Pokeballs have to be so hard?
+Do you know how a Pokeball works? Inside the ball is an empty space that can contain a small version of a Pokemon. The shell of the ball is made of a very hard material - it needs to be hard because some Pokemon are very powerful, and could attack their way out otherwise! There is a clasp on the front of the Pokeball that keeps the ball shut until it's time to battle. When a Pokemon master chooses a Pokemon, they press a button on the front of the Pokeball that releases the clasp and allows the Pokemon to appear outside of the ball. Why do Pokeballs have to be so hard?
 To keep powerful pokemon in
 To avoid getting dented on rocks
 To bash against opponent's Pokeballs
@@ -358,8 +358,38 @@ Glaceon likes vegetables, Flareon likes junk food.
 Glaceon likes sandwiches, Flareon likes tacos.
 Glaceon likes sour foods, Flareon likes sweet foods.
 
-Do you know how to put a Pokemon to sleep? Pokemon fall asleep when they hear a special lullaby. THe lullaby is 10 seconds long. You need to sing it 3 times to get them to fall asleep. How long do you have to sing to put a Pokemon to sleep?
+Do you know how to put a Pokemon to sleep? Pokemon fall asleep when they hear a special lullaby. The lullaby is 10 seconds long. You need to sing it 3 times to get them to fall asleep. How long do you have to sing to put a Pokemon to sleep?
 30 seconds
 10 seconds
 20 seconds
 60 seconds
+
+Tentacool has an attack where he spins like a whirlpool. If he's facing forwards now and he spins 180°, which way is he facing?
+Backwards
+Forwards
+To the right
+Face-down
+
+Belsprout grows straight out of the ground towards the sun! If the angle Belsprout forms with the ground is a right angle, how many degrees does it measure?
+90°
+180°
+45°
+360°
+
+Caneira has a lot of sharp teeth! Unlike humans, Caneira's have 4 rows of teeth. Each row has 9 teeth. How many teeth does Caneira have?
+36
+35
+45
+12
+
+A Binacle Pokemon looks like a hand. Each Binacle has 5 fingers on it. If there are 9 Binacle's, how many fingers are there in total?
+45
+36
+46
+48
+
+Bulbasaur is waiting for his next battle, and he's bored! He's watching the second hand go around the clock. If it starts at the top of the clock and moves all the way around the circle back to 12, how many degrees has it rotated through?
+360°
+180°
+90°
+45°
