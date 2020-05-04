@@ -40,65 +40,17 @@ Enemies
 Teacher/student
 Father/son
 
-As a psychic type pokemon, Alakazam often plays tricks on people. He will make items disappear when you're not looking so you can't find them. He will make things float away from you when you're trying to hold them. He likes to confuse people for fun! What word describes Alakazam?
-Troublemaker
-Helpful
-Frightened
-Curious
-
-Ditto and Snorlax are both normal type pokemon. They can both be pretty stubborn at times. They are also both pretty soft and jiggly. However, Ditto fits in your hands, while Snorlax couldn't even fit in your house. They still get along very well with each other, though! What is one way that Ditto and Snorlax are different from each other?
-Their size
-How jiggly they are
-Their types
-Ditto is stubborn but Snorlax is not
-
-A Pokemon card includes a few different kinds of information on its Pokemon. The type and the HP are in the corner. A picture of the Pokemon is in the center. The Pokemon's attacks are listed near the bottom. There's a lot to read! What is one kind of information that isn't on a Pokemon card?
-Its weight
-Its HP
-Its picture
-Its attacks
-
-Do you know how a Pokeball works? Inside the ball is an empty space that can contain a small version of a Pokemon. The shell of the ball is made of a very hard material - it needs to be hard because some Pokemon are very powerful, and could attack their way out otherwise! There is a clasp on the front of the Pokeball that keeps the ball shut until it's time to battle. When a Pokemon master chooses a Pokemon, they press a button on the front of the Pokeball that releases the clasp and allows the Pokemon to appear outside of the ball. Why do Pokeballs have to be so hard?
-To keep powerful pokemon in
-To avoid getting dented on rocks
-To bash against opponent's Pokeballs
-So they don't rust
-
 Ash tried to capture Mewtwo by fighting it with one of his best Pokemon. He chose Bulbasaur, planning to use Vine Whip to defeat Mewtwo. Bulbasaur took one look at Mewtwo and tried to run from the fight, though. Mewtwo was one of the strongest Pokemon there was, and Bulbasaur was worried he couldn't win. Ash eventually had to call him back into the Pokeball. Why didn't Bulbasaur fight Mewtwo?
 He was too scared of him
 The Pokeball wouldn't open
 Ash thought Squirtle was a better choice
 Mewtwo flew away
 
-As an ice type Pokemon, Articuno feels most comfortable at the top of a snowy mountain - the ice makes him feel at home! Where do you think Venusaur (a grass type pokemon), would feel the most comfortable?
-In a forest
-On top of a volcano
-In the ocean
-In a rocky cave
-
-At the Fuscia Gym, Ash saw an Axew that was lying on the ground. It looked extremely tired and a little sick. He thought that maybe it had just been stunned in a battle. Ash felt sorry for the Axew, so he gave it a healing potion. After drinking it, the Axew felt all better! How would you describe Ash's actions towards the Axew?
-Helping it
-Hurting it
-Playing with it
-Teaching it
-
 Fire type Pokemon and Water type Pokemon are pretty different. Fire type Pokemon can have bad tempers, while Water type Pokemon are very easy going. Fire type Pokemon like hot, dry weather, while Water Type Pokemon prefer the rain. However, both Fire type and Water type Pokemon love eating Pokemon food! But Water type Pokemon enjoy their food with a Pokemon soda, while Fire type Pokemon don't. What is a similarity between Fire type and Water type Pokemon?
 They both like eating Pokemon food
 They both like the rain
 They both have bad tempers
 They both like Pokemon soda
-
-At the Sapphire Gym, Ash found a Pokeball on the ground. He tried to open it to see the Pokemon inside, but it wouldn't open. He noticed a small keypad on top of the Pokeball with the numbers 1-9 on it. What might help Ash open the Pokeball?
-A passcode
-A key
-A magic song
-Asking politely
-
-Ash and Gary had a Pokemon battle. Ash's Eevee used Quick Attack and stunned Gary's Squirtle. Gary called back Squirtle into his Pokeball and accepted defeat. Who won the battle?
-Ash
-Gary
-Neither one
-Everyone
 
 Ash knew that his Eevee was going to evolve very soon. He was really hoping she would turn into a Flareon, which was his favorite evolution. One day he called her out of her Pokeball, and instead of Eevee, Umbreon came out! Ash was happy anyway. What did Eevee evolve into?
 Umbreon
@@ -130,12 +82,6 @@ It was too big
 He had too many Pokemon already
 He didn't want a Zapdos.
 
-Ash and Brock came to a bridge they had to cross. Ash had a Blastoise with him. Blastoise is big and heavy. Ash tested the bridge with his foot and thought it wasn't strong enough to hold all of them. Blastoise had to wait where he was while Ash and Brock crossed the bridge. Why couldn't Blastoise come with them?
-He was too heavy for the bridge to hold him
-Because he was busy swimming
-Because he was playing with Venusaur
-Because a Snorlax was in the way
-
 There are four trainers, and each one has 5 Hoopas. How many Hoopas are there in total?
 20
 25
@@ -147,12 +93,6 @@ Mankee can jump 6 feet in the air. Mew can jump 3 times as high. How high can Me
 21 feet
 16 feet
 12 feet
-
-Walking from Pewter City Gym to Cerulean City Gym is 7 miles. How many miles is it to walk there and back?
-14
-21
-16
-18
 
 Ash has 7 Pokemon trainer badges. Each badge has 6 gems on it. How many gems are there in total?
 42
@@ -189,18 +129,6 @@ Ditto is a shape-shifter pokemon! He can change colors, get taller, or even grow
 28
 49
 27
-
-Alakazam's are superstitious Pokemon. They love the number 7! For good luck, Alakazam's where 7 golden necklaces. If there are 7 Alakazam's, how many necklaces do they have between them?
-49
-48
-64
-51
-
-Weedle is a tiny pokemon. He's small enough to fit on your hand, or in your pocket. Tentacruel is a giant Pokemon - he's bigger than a cruise ship! Weevil wants to be big one day. He looks up to Tentacruel, because he's so big. Big Pokemon like Tentacruel, Blastoise, and Venusaur are some of Weevil's heroes. How would you describe how Weevil feels about Tentacruel?
-He admires him.
-He's afraid of him.
-He thinks he's funny.
-He prefers Meowth!
 
 Today is a big day for Ash! He's going to the Cinnabar Gym to battle for a new Pokemon Trainer badge. Last night he packed his Pokeballs and lunch in a big bag, and went to bed early so he could be well rested for the big battle. In the morning, he was in such a rush that he left without grabbing his bag. When he got to the gym he looked around for his Pokeballs, but couldn't find them. Why couldn't he find them?
 He forgot them at home.
@@ -285,12 +213,6 @@ Charamander
 Weedle
 Meowth
 They ran the same distance.
-
-Do you know what it means for something to be dense? If something is dense, it means it's heavy and small. Haunter is a ghost, and he can float! He's pretty big, but he's lighter than a balloon, and can blow away in a breeze. Geodude, on the other hand, is small and made of rock, so he's very heavy - too heavy to hold in your arms. Who is denser?
-Geodude
-Haunter
-Neither
-Meowth
 
 Ash and Brock are heading to Vermilion Gym. On the way there, Brock realized he forgot a book that he wanted to bring at home. Brock told Ash to go ahead without him, and that he would meet him at the gym. Ash kept walking, and in a few minutes reached Cinnabar Gym. When he walked in the door, he saw Gary waiting for him. Ash greeted Gary and they began talking about the Pokemon battles they wanted to have. Who got to Cinnabar Gym first?
 Gary
@@ -399,3 +321,93 @@ Raichu had it
 It was under her bed
 She left it at school
 We still don't know!
+
+Leafeon and Vaporeon are talking about quadrilaterals. Leafeon says all Squares are Rectanlges, but not all Rectangles are Squares. Vaporeon disagrees, and says that all Rectangles are Squares, but not all Squares are Rectanlges. Who is right?
+Leafeon
+Vaporeon
+Neither of them
+Both of them
+
+Farfetch'd is a Pokemon that likes playing with sticks. He has 4 sticks, and they are all the exact same size. Which shapes can he make with his sticks?
+Square and Rhombus
+Trapezoid
+Pentagon
+Rectangle only
+
+Baby Clefairy is a cute pokemon, but not an "acute" Pokemon (get it?). How many acute angles are in a Rhombus?
+2
+4
+1
+3
+
+Linoone runs very fast, but only in straight lines! When it faces an obstacle, it can only turn in a right angle. If Linoone is about to run into a tree, how many degrees does it turn?
+90°
+100°
+360°
+45°
+
+Bulbasaur runs in the shape of a square, so that at the end he's back where he started. How many right-angle turns did he make?
+4
+2
+1
+5
+
+Two Deerling's are running parallel to each other. If they keep running, will they ever cross each other's paths?
+No, because parallel lines don't cross.
+No, because one Deerling must be running faster than the other.
+Yes, because parallel lines have to cross.
+Yes, because the lines have to end at some point.
+
+Three Weedle's are lying on the ground together. If each Weedle lies with its body in a straight line, what shape could they make?
+Triangle
+Trapezoid
+Pentagon
+Octagon
+
+The word "immediately" means, "right away" or "in no time". Here's a story: Ash and Misty were searching for Butterfree's in a dark forest. Ash realized he hadn't seen Pikachu in several minutes, and became worried that he had gotten lost. He shouted "Pikachu, where are you?" Immediately, Pikachu dropped out of a tree and landed at his side. He had climbed up it to get a better view of the Butterfree's! How long did Ash have to look for Pikachu before he found him?
+No time at all, he found him immediately.
+Several minutes.
+A few seconds.
+An hour.
+
+The word "concerned" means "worried". Here's a story: Charizard is a big Pokemon, and needs to eat 100 lbs. of Pokemon food at every meal. At dinner, Charizard only ate 50 lbs. of food. Ash was concerned. He then brought out 50 lbs. of ice cream. Charizard guzzled it down - he was just saving room for dessert! Why did Ash bring out the ice cream?
+He was worried Charizard wasn't eating enough.
+He wanted to cool Charizard down after breathing fire.
+The ice cream was going to melt.
+To reward Charizard for winning a battle.
+
+The word "zoology" means "the study of animals" (like "zoo"). In school, Ash had a zoology class. It was his favorite subject! What do you think he studied in it?
+Animals (and Pokemon!)
+Amusement parks
+Math
+Music
+
+The word "climate" means "weather". Ash looked up the Pokemon Exeggutor in his Pokedex. This is what the Pokedex said:" "Exeggutor's look like palm trees, and prefer tropical climates". What did the Pokedex mean?
+That Exeggutor's like hot, damp weather.
+That Exeggutor's like to stay close to the ground.
+That Exeggutor's like to climb trees.
+That Exeggutor's are afraid of monkeys.
+
+The word "carpenter" means someone who builds things out of wood. Ash's Herdier (a dog-like Pokemon) just had babies, and they need somewhere to live. Who should Ash call to build them a house?
+A carpenter.
+A computer programmer.
+A plumber.
+Ghostbusters.
+
+The word "contradict" means to say something that disagrees. Here's a story: Ash and Brock are talking. Ash says that Charmeleons and Wartortles should be kept apart from each other, because they are fire and water type Pokemon. But Brock contradicts him, saying that it's good for these Pokemon to get to know other Pokemon who are different from them. How would you describe Brock's opinion?
+He disagrees with Ash.
+He agrees with Ash.
+He doesn't know what to think.
+He agrees with Misty.
+
+The word "banter" means "chat" or "talk". Here's a story. Ash and Misty are walking to a new town. Squirtle and Charamander walk in front of them. Squirtle keeps saying "Squirtle!", and Charamander keeps saying "Charamander!". Ash says to Misty, "It sounds like they're bantering!" What did he mean?
+It sounded like the Pokemon were talking to each other.
+It sounded like the Pokemon were upset with each other.
+It sounded like the Pokemon were playing a game.
+It sounded like it was about to start raining.
+
+The word "collaborate" means "to work together". Here's a story: Beedrill is building a new hive. Alone, it would take him several hours to finish it, because he has to collect a lot of sticks and grass to build it from. However, Mankee and Bulbasaur help him out. Mankee climbs a tree and starts collecting branches, and Bulbasaur runs through a field and collects grass. They give what they collect to Beedrill, and he finishes the hive in no time! Ash says "Isn't it great how much we can do when we collaborate?" What does he mean?
+We can do more when we work together.
+Building a hive is hard work.
+Beedrill owes his friends a favor.
+The hive was really high above the ground.
