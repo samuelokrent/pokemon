@@ -4,29 +4,11 @@ Charizard's HP is 120. Drinking a power potion increases his HP by 10. What is C
 210
 200
 
-Misty was wandering in the woods and saw 7 Lickitungs. Ash was with her and he saw 4 Lickitungs. How many Lickitungs did they see in total?
-11
-8
-74
-10
-
 Bulbasaur's Vine Whip attack does 20 damage. Blastoise's Torrent attack does twice as much damage. How much damage does Blastoise's Torrent attack do?
 40
 30
 22
 10
-
-A pokemon master is allowed 6 Poke balls. If Ash, Brock, and Misty all have 6 Poke balls, how many Poke balls do they have in total?
-18
-24
-12
-9
-
-Ekans loves to eat Pidgey eggs! He found 4 Pidgey nests, and each one had 3 Pidgey eggs in it. If Ekans eats all of them, how many Pidgey eggs will he eat?
-12
-15
-16
-7
 
 Brock has 6 Pokemon trainer badges. To be recognized as a Pokemon master at Saffron City Gym, he would need to have twice as many badges. How many badges does a Pokemon trainer need to have to be recognized as a master at Saffron City Gym?
 12
@@ -34,83 +16,17 @@ Brock has 6 Pokemon trainer badges. To be recognized as a Pokemon master at Saff
 14
 6
 
-Cyndaquil and Magicarp don't get along - Cyndaquil is a fire type, while Magicarp is a water type! On the other hand, Magicarp and Goldeen get along very well. They swim together, teach each other new attacks, and share food. What kind of relationship do Magicarp and Goldeen have?
-Friends
-Enemies
-Teacher/student
-Father/son
-
-Ash tried to capture Mewtwo by fighting it with one of his best Pokemon. He chose Bulbasaur, planning to use Vine Whip to defeat Mewtwo. Bulbasaur took one look at Mewtwo and tried to run from the fight, though. Mewtwo was one of the strongest Pokemon there was, and Bulbasaur was worried he couldn't win. Ash eventually had to call him back into the Pokeball. Why didn't Bulbasaur fight Mewtwo?
-He was too scared of him
-The Pokeball wouldn't open
-Ash thought Squirtle was a better choice
-Mewtwo flew away
-
-Fire type Pokemon and Water type Pokemon are pretty different. Fire type Pokemon can have bad tempers, while Water type Pokemon are very easy going. Fire type Pokemon like hot, dry weather, while Water Type Pokemon prefer the rain. However, both Fire type and Water type Pokemon love eating Pokemon food! But Water type Pokemon enjoy their food with a Pokemon soda, while Fire type Pokemon don't. What is a similarity between Fire type and Water type Pokemon?
-They both like eating Pokemon food
-They both like the rain
-They both have bad tempers
-They both like Pokemon soda
-
-Ash knew that his Eevee was going to evolve very soon. He was really hoping she would turn into a Flareon, which was his favorite evolution. One day he called her out of her Pokeball, and instead of Eevee, Umbreon came out! Ash was happy anyway. What did Eevee evolve into?
-Umbreon
-Flareon
-Glaceon
-Jolteon
-
-There are 6 Bulbasaurs. Each Bulbasaur has 4 legs. How many legs are there?
-24
-12
-20
-60
-
-In a Pokemon battle, each trainer is allowed 6 starter Pokemon. A game involves 2 trainers. How many starter Pokemon are there in total?
-12
-18
-20
-22
-
 Marowaks like to walk together. A group of Marowaks are walking in 6 rows, with 6 Marowaks in each row. How many Marowaks are there?
 36
 22
 18
 29
 
-Ash saw a Zapdos! While he was taking out a Pokeball to catch it, it flapped its wings and took off. Why couldn't Ash catch the Zapdos?
-It flew away
-It was too big
-He had too many Pokemon already
-He didn't want a Zapdos.
-
-There are four trainers, and each one has 5 Hoopas. How many Hoopas are there in total?
-20
-25
-16
-15
-
 Mankee can jump 6 feet in the air. Mew can jump 3 times as high. How high can Mew jump?
 18 feet
 21 feet
 16 feet
 12 feet
-
-Ash has 7 Pokemon trainer badges. Each badge has 6 gems on it. How many gems are there in total?
-42
-48
-49
-30
-
-Pichu evolves into Pikachu, and Pikachu evolves into Raichu. If a trainer has a "Full evolution" of Pikachu, it means theyve caught all 3: Pichu, Pikachu, and Raichu. If a trainer had 7 "Full evolutions" of Pikachu, how many Pokemon would they have?
-21
-24
-17
-28
-
-Machamp has 4 arms! Each hand has 6 fingers on it. How many fingers does Machamp have?
-24
-22
-28
-36
 
 Spynarak weighs 8 pounds. Brock caught 6 Spynaraks in a net! How much do all the Spynaraks weigh together?
 48
@@ -124,12 +40,6 @@ It takes 4 weeks to earn a Novice Pokemon Trainer badge. If one week has 7 days,
 49
 24
 
-Ditto is a shape-shifter pokemon! He can change colors, get taller, or even grow new hands! If he grows 7 hands, and each has 5 fingers, how many fingers would he have in total?
-35
-28
-49
-27
-
 Today is a big day for Ash! He's going to the Cinnabar Gym to battle for a new Pokemon Trainer badge. Last night he packed his Pokeballs and lunch in a big bag, and went to bed early so he could be well rested for the big battle. In the morning, he was in such a rush that he left without grabbing his bag. When he got to the gym he looked around for his Pokeballs, but couldn't find them. Why couldn't he find them?
 He forgot them at home.
 They were invisible.
@@ -141,12 +51,6 @@ Sing a song.
 Dance a dance.
 Ask to play a game.
 Throw a cake at someone.
-
-Have you ever wondered how an official Pokemon battle starts? This is how: First you walk up to the front door of the gym and ring the bell. Then, you find another trainer who has as many badges as you do. Next, you battle! Which of these steps are in the right order?
-Ring the bell, find a trainer, battle.
-Find a trainer, battle, Ring the bell.
-Wake up, brush teeth, battle.
-Ring the bell, say hi to Meowth, battle.
 
 Pokemon come in all shapes and sizes! Slowpoke weights 42 lbs. Cubone weighs 14 lbs. Entei weighs 320 lbs. Which of these pokemon weighs the least?
 Cubone
@@ -160,23 +64,11 @@ Eevee
 Snorlax
 Meowth
 
-Ash and Misty are making Pokemon food to feed their Pokemon. They both make 1 lb. of Pokemon food. Ash has 3 Pokemon. If he divides the Pokemon food evenly, how much food will each Pokemon get?
-1/3 lb.
-3 lbs.
-1 lb.
-1/6 lb.
-
 Ash and Misty are making Pokemon food to feed their Pokemon. They both make 1 lb. of Pokemon food. Ash has 3 Pokemon, and Misty has 6 Pokemon. If Ash divides his food evenly between his 3 Pokemon, and Misty divides her food evenly between her 6 Pokemon, whose Pokemon get more food each?
 Ash's Pokemon
 Misty's Pokemon
 Meowth
 They both get the same amount.
-
-Gary is training his Pidgeotto. He trains him by throwing sticks high in the air, and seeing how many sticks Pidgeotto can catch before they hit the ground. Gary throws 20 sticks in total into the air. If 5 sticks hit the ground, how many sticks did Pidgeotto catch?
-15
-5
-10
-20
 
 Pokemon live in all kinds of places. Pidgeotto's make nests in trees. Kakuna's also live in trees, but not in nests; instead they hang off the edges of branches. Diglett's burrow in the dirt and live in holes. Tentacool's live in the water near seashores. Which kind of Pokemon lives underground?
 Diglett
@@ -189,12 +81,6 @@ Do you know what an Onix looks like? Onix is a Pokemon that looks like a big sna
 16
 8
 12
-
-Ash, Misty, and Brock went on adventure. Misty's Pokemon, Togepi, wanted to come with them. Misty told Togepi she would like her to come on the adventure, but she was worried it would be too dangerous. For that reason, Misty told Togepi she had to stay home. The three friends set off on their journey. They were walking for over an hour when they decided to stop for lunch. As Misty was pulling their lunch out of her bag, out tumbled Togepi! "Togepi!" Misty said, "I told you to stay at home!" Misty was upset at first, but she quickly forgave Togepi and they all ate lunch happily together. How did Togepi come along on the journey?
-She hid in Misty's bag.
-She got a ride on Vulpix's back.
-She walked alongside them.
-She climbed up a tree.
 
 Misty loves to read. She's often found with her nose buried in a book. One day, she and her friends were in the woods searching for Lickatungs. None of the friends could find any, though! After an hour, they had almost given up. Then Misty saw a certain mark on the trunk of a tree. She told her friends that it meant a Lickatung was near. Following similar signs on the ground and nearby trees, she led her friends all the way to a group of Licktaungs that were dozing in the grass. Excitedly, she pulled out a Pokeball and caught one. Misty's friends were very impressed, and asked her how she knew to follow the marks she saw on the trees and in the grass. Proudly, Misty showed her friends a book she had been carrying, called "How to Find Lickatungs in the Forest". How did Misty know how to find the Lickatungs?
 She read about it in a book.
@@ -250,29 +136,11 @@ He was hungry.
 He wasn't getting along with Pikachu.
 He was anxious to battle.
 
-Pokemon are just like people; they need all the same things we do. Pokemon need to eat healthy diets, get enough sleep, and go outside to excercise. They need to spend time with their friends, as well as take some time alone. It's good for them to play games, and it's good for a trainer to show them they care about them. What's one thing a Pokemon doesn't need to be healthy?
-Lots of toys.
-Time with friends.
-Excercise and healthy food.
-Time alone.
-
-Ash is walking around Pallet Town, searching for Pokemon. He's looking for a Caterpie! Caterpie's love thick grass, so he heads for the biggest fields with the thickest grass. Immediately he finds several Weedle's, but that's not what he's looking for. A couple Pidgey's fly overhead, but he doesn't bother trying to catch them. He pulls out his flashlight to check underneath a big rock, and there it is! A Caterpie! He quickly pulls out a Pokeball to catch it. What Pokemon doesn't Ash see?
-Diglett
-Caterpie
-Pidgey
-Weedle
-
 A Weedle's body is made of 4 different segments. If there are 3 Weedles, how many body segments are there in total?
 12
 15
 16
 18
-
-Ash, Brock, Pikachu, and Charizard are searching for an Onix. Their search has taken them to the back of a long, dark cave. This far in, there's hardly any light. From even farther into the cave, they hear some pebbles clatter. Everyone gets nervous, because they can't see anything! Quickly, Charizard blows a jet of fire into the air over their heads, lighting up the whole cave. Immediately, they can see again. From the direction the noise came from, they see a tiny mouse scampering away into a crack. The friends look at each other and laugh. There was nothing to be scared of! Why did Charizard breathe fire?
-To help them see.
-To catch the Onix.
-To cook the mouse.
-To frighten Pikachu.
 
 Glaceon is an ice-type Pokemon. Her favorite foods are ice cream, popsicles, and iced tea. Flareon is a fire-type Pokemon. Her favorite foods are spicy peppers, hot cocoa. How would you categorize Glaceon's and Flareon's favorite foods?
 Glaceon likes cold foods, Flareon likes hot foods.
@@ -411,3 +279,27 @@ We can do more when we work together.
 Building a hive is hard work.
 Beedrill owes his friends a favor.
 The hive was really high above the ground.
+
+The word "exclude" means "to leave out". Here's a story: Pikcahu, Charamander, and Bulbasaur are playing a game of catch. They found a small pebble and they're tossing it back and forth between them. Squirtle walks up to them and asks, "Can I join the game?". "Of course!" they say, "We didn't mean to exclude you!" What did they mean?
+They didn't want to leave Squirtle out of the game.
+The didn't think Squirtle could play catch.
+They are done playing.
+They hope Squirtle brought a better ball for them to play with.
+
+The word "reduce" means "to make less" or "to get rid of some". Here's a story: Eevee is trying to clear some stones off of a path so she and her friends can pass through it. She can only pick up one stone at a time though, so it's slow work! Charizard sees her working, and flaps his winds over to her. He grabs two big piles of stones in his claws and flies them away. Just like that, the work Eevee had to do was reduced by half! What does that mean?
+After Charizard's help, she had a lot less work to do.
+Charizard gave Eevee more work to do.
+Charizard broke each stone in half.
+Eevee was clearing the path for Charizard.
+
+The word "automobile" means "car". Here's a story: Ash and his friends were taking a lunch break along the side of a dusty road. Suddenly, a Dodrio ran by, stirring up so much dust that all the friends could see was a big dust cloud. "Wow!" Ash said, "That Dodrio was moving faster than an automobile!" What did he mean?
+The Dodrio could run as quickly as a car moves.
+The Dodrio would prefer to be in an automobile.
+The Dodrio runs that fast automatically.
+The Dodrio was running backwards.
+
+The word "priceless" means extremely valuable, too valuable to be replaced or sold. Here's a story: Ash is visiting his friend Professor Oak. Professor Oak is a collector, and has a lot of interesting Pokemon items in his lab. Ash sees one that particularly interests him: a large horn in a glass case. He asks Professor Oak what it is. Professor Oak replies: "That is the horn of a giant Rhyhorn I found during my travles!". Ash thinks it's very cool - he counts out the change in his pocket, and says, "Any chance I could buy it from you?" Professor Oak answers, "I'm afraid it's priceless!". What does he mean?
+The horn is too valuable to sell to Ash.
+Ash can have it for free.
+Ash would have to trade a different Pokemon horn.
+The horn is actually a musical instrument.
