@@ -34,7 +34,7 @@ Dance a dance.
 Ask to play a game.
 Throw a cake at someone.
 
-Pokemon come in all shapes and sizes! Slowpoke weights 42 lbs. Cubone weighs 14 lbs. Entei weighs 320 lbs. Which of these pokemon weighs the least?
+Pokemon come in all shapes and sizes! Slowpoke weighs 42 lbs. Cubone weighs 14 lbs. Entei weighs 320 lbs. Which of these pokemon weighs the least?
 Cubone
 Slowpoke
 Entei
@@ -136,12 +136,6 @@ He wanted to cool Charizard down after breathing fire.
 The ice cream was going to melt.
 To reward Charizard for winning a battle.
 
-The word "climate" means "weather". Ash looked up the Pokemon Exeggutor in his Pokedex. This is what the Pokedex said:" "Exeggutor's look like palm trees, and prefer tropical climates". What did the Pokedex mean?
-That Exeggutor's like hot, damp weather.
-That Exeggutor's like to stay close to the ground.
-That Exeggutor's like to climb trees.
-That Exeggutor's are afraid of monkeys.
-
 The word "contradict" means to say something that disagrees. Here's a story: Ash and Brock are talking. Ash says that Charmeleons and Wartortles should be kept apart from each other, because they are fire and water type Pokemon. But Brock contradicts him, saying that it's good for these Pokemon to get to know other Pokemon who are different from them. How would you describe Brock's opinion?
 He disagrees with Ash.
 He agrees with Ash.
@@ -177,3 +171,4 @@ The horn is too valuable to sell to Ash.
 Ash can have it for free.
 Ash would have to trade a different Pokemon horn.
 The horn is actually a musical instrument.
+
