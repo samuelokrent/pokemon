@@ -189,3 +189,63 @@ Three eighths.
 Three eight.
 Three slash eight.
 Eight thirds.
+
+Pokemon know it's important to share with their friends! Bulbasaur has 12 cookies. He divides them evenly between himself, Pikachu, and Squirtle. If 12 cookies are divided up amongst 3 friends, how many cookies does each friend get?
+4
+36
+6
+2
+
+Beedrill's like to fly in formation! There's a swarm of 16 Beedrill's flying out of their hive. They divide themselves evenly into 4 groups, and each group goes in a different direction. How many Beedrill's are in each group?
+4
+64
+8
+12
+
+Three Pokemon trainers buy 15 brand new Pokeballs together. Can the 15 Pokeballs be divided evenly amongst the 3 friends?
+Yes
+No, there will be a remainder of 1 Pokeball.
+No, there will be a remainder of 2 Pokeball.
+No, there aren't enough Pokeballs.
+
+13 Tauros's are loose in the city! They're scared of people, so they're difficult to round up. 4 Pokemon trainers volunteer to round up the Tauros's. They want to divide them evenly, so that each Pokemon trainer is in charge of the same number of Tauros's. Will that work? Can they divide 13 Tauros's evenly by 4 Pokemon trainers?
+No, there will be a remainder of 1 Tauros.
+No, there will be a remainder of 2 Tauros's.
+Yes
+No, there aren't enough Tauros's for each Trainer to get one.
+
+4 Pokemon trainers have 8 trainer badges between them, for excelling at Pokemon battles and being good to their Pokemon! Each trainer has the same number of badges, meaning that the 8 badges are divided evenly among the 4 trainers. What does that tell us?
+4 is a divisor of 8.
+4 is a multiple of 8.
+4 is greater than 8.
+4 times 8 is 8.
+
+Machoke's need to eat a lot, because they're big Pokemon! Gary is in charge of 3 Machoke's. To feed them, he had to buy 18 Pokemon snacks. If each Machoke eats the same amount, how many Pokemon snacks did each Machoke eat?
+6
+54
+12
+4
+
+The word "contemplate" means "to think about". Here's a story: Ash, Brock, and Misty were walking through the countryside with their Pokemon. They walked over rocky cliffs, through tall grass, and mucked through mud. Eventually, they got to a wide river. Charamander and Flareon were afraid of swimming through the water, because they were fire type Pokemon. Everyone looked to Ash for guidance. He sat down and contemplated for a while, and the rest of them waited. Eventually he stood up and talked to Spearow and Pidgeot. These two flying type Pokemon picked up Charamander and Flareon and flew them safely across the river, while the rest of the friends waded through. Why did everyone have to wait for Ash while he was sitting down?
+He was thinking of a plan.
+He was changing into sandals.
+He was tired from the walk.
+He was making lunch.
+
+The word "inferno" means a big, blazing flame. Which type of Pokemon do you think would be most comfortable around an inferno?
+Fire Type
+Water Type
+Grass Type
+Bug Type
+
+The word "expanse" means "a big, open area". Here's a story: Ash is searching for Kabutops. At a gym, another trainer tells him that Kabutops like to graze just beyond a nearby mountain range. So, early the next morning, he climbs one of the mountains in the range. After a long day of hiking, he reaches the top! He looks over the edge at the other side of the mountain, and sees a wide expanse of grass, with plenty of Kabutops running to and fro on it. How would you describe the area of grass that Ash saw?
+Big and open.
+Narrow and closed.
+Hidden from sight.
+Barren and rocky.
+
+The word "imply" means "to suggest". Here's a story: Ash and his friends are in Anville Town searching for Pinsir's, which are beetle-like Pokemon with big jaws. They take a break from their search to get lunch at a restaurant. They start chatting with their waitress, who asks about their search for Pinsir's, and implies they might have an easier time finding them in the nearby Dewford Town. After lunch, the friends head out for Dewford Town to continue searching. Why did they leave Anville Town?
+Their waitress suggested they go to another town.
+They already found enough Pinsir's.
+They heard there was better ice cream in Dewford Town.
+They were chasing a Pinsir that ran all the way to Dewford Town.
