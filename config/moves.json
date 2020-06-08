@@ -6833,5 +6833,29 @@
         "pp": 5,
         "max_pp": 8, 
         "type": "Water"
+    },
+    {
+        "accuracy": 95, 
+        "category": "\u7279\u6b8a", 
+        "cname": "", 
+        "ename": "Descend", 
+        "id": 620, 
+        "jname": "\u30B9\u30C1\u30FC\u30E0\u30D0\u30FC\u30B9\u30C8", 
+        "power": 80, 
+        "pp": 5,
+        "max_pp": 8, 
+        "type": "Flying"
+    },
+    {
+        "accuracy": 95, 
+        "category": "\u7279\u6b8a", 
+        "cname": "", 
+        "ename": "Soar", 
+        "id": 621, 
+        "jname": "\u30B9\u30C1\u30FC\u30E0\u30D0\u30FC\u30B9\u30C8", 
+        "power": 110, 
+        "pp": 5,
+        "max_pp": 8, 
+        "type": "Flying"
     }
 ]
