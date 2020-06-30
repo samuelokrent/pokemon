@@ -22,7 +22,7 @@ It takes 4 weeks to earn a Novice Pokemon Trainer badge. If one week has 7 days,
 49
 24
 
-Ash and Brock are heading to Vermilion Gym. On the way there, Brock realized he forgot a book that he wanted to bring at home. Brock told Ash to go ahead without him, and that he would meet him at the gym. Ash kept walking, and in a few minutes reached Cinnabar Gym. When he walked in the door, he saw Gary waiting for him. Ash greeted Gary and they began talking about the Pokemon battles they wanted to have. Who got to Cinnabar Gym first?
+Ash and Brock are heading to Cinnabar Gym. On the way there, Brock realized he forgot a book that he wanted to bring at home. Brock told Ash to go ahead without him, and that he would meet him at the gym. Ash kept walking, and in a few minutes reached Cinnabar Gym. When he walked in the door, he saw Gary waiting for him. Ash greeted Gary and they began talking about the Pokemon battles they wanted to have. Who got to Cinnabar Gym first?
 Gary
 Ash
 Brock
@@ -70,30 +70,6 @@ No, because one Deerling must be running faster than the other.
 Yes, because parallel lines have to cross.
 Yes, because the lines have to end at some point.
 
-The word "immediately" means, "right away" or "in no time". Here's a story: Ash and Misty were searching for Butterfree's in a dark forest. Ash realized he hadn't seen Pikachu in several minutes, and became worried that he had gotten lost. He shouted "Pikachu, where are you?" Immediately, Pikachu dropped out of a tree and landed at his side. He had climbed up it to get a better view of the Butterfree's! How long did Ash have to look for Pikachu before he found him?
-No time at all, he found him immediately.
-Several minutes.
-A few seconds.
-An hour.
-
-The word "concerned" means "worried". Here's a story: Charizard is a big Pokemon, and needs to eat 100 lbs. of Pokemon food at every meal. At dinner, Charizard only ate 50 lbs. of food. Ash was concerned. He then brought out 50 lbs. of ice cream. Charizard guzzled it down - he was just saving room for dessert! Why did Ash bring out the ice cream?
-He was worried Charizard wasn't eating enough.
-He wanted to cool Charizard down after breathing fire.
-The ice cream was going to melt.
-To reward Charizard for winning a battle.
-
-The word "contradict" means to say something that disagrees. Here's a story: Ash and Brock are talking. Ash says that Charmeleons and Wartortles should be kept apart from each other, because they are fire and water type Pokemon. But Brock contradicts him, saying that it's good for these Pokemon to get to know other Pokemon who are different from them. How would you describe Brock's opinion?
-He disagrees with Ash.
-He agrees with Ash.
-He doesn't know what to think.
-He agrees with Misty.
-
-The word "priceless" means extremely valuable, too valuable to be replaced or sold. Here's a story: Ash is visiting his friend Professor Oak. Professor Oak is a collector, and has a lot of interesting Pokemon items in his lab. Ash sees one that particularly interests him: a large horn in a glass case. He asks Professor Oak what it is. Professor Oak replies: "That is the horn of a giant Rhyhorn I found during my travles!". Ash thinks it's very cool - he counts out the change in his pocket, and says, "Any chance I could buy it from you?" Professor Oak answers, "I'm afraid it's priceless!". What does he mean?
-The horn is too valuable to sell to Ash.
-Ash can have it for free.
-Ash would have to trade a different Pokemon horn.
-The horn is actually a musical instrument.
-
 Munchlax loves to eat! His trainer put a pizza in front of him that had 8 slices total. Munchlax ate 5 slices of pizza. How much of the pizza did he eat, as a fraction?
 Five eighths.
 Three eighths.
@@ -130,12 +106,6 @@ No, there will be a remainder of 1 Pokeball.
 No, there will be a remainder of 2 Pokeball.
 No, there aren't enough Pokeballs.
 
-13 Tauros's are loose in the city! They're scared of people, so they're difficult to round up. 4 Pokemon trainers volunteer to round up the Tauros's. They want to divide them evenly, so that each Pokemon trainer is in charge of the same number of Tauros's. Will that work? Can they divide 13 Tauros's evenly by 4 Pokemon trainers?
-No, there will be a remainder of 1 Tauros.
-No, there will be a remainder of 2 Tauros's.
-Yes
-No, there aren't enough Tauros's for each Trainer to get one.
-
 4 Pokemon trainers have 8 trainer badges between them, for excelling at Pokemon battles and being good to their Pokemon! Each trainer has the same number of badges, meaning that the 8 badges are divided evenly among the 4 trainers. What does that tell us?
 4 is a divisor of 8.
 4 is a multiple of 8.
@@ -166,8 +136,44 @@ Narrow and closed.
 Hidden from sight.
 Barren and rocky.
 
-The word "imply" means "to suggest". Here's a story: Ash and his friends are in Anville Town searching for Pinsir's, which are beetle-like Pokemon with big jaws. They take a break from their search to get lunch at a restaurant. They start chatting with their waitress, who asks about their search for Pinsir's, and implies they might have an easier time finding them in the nearby Dewford Town. After lunch, the friends head out for Dewford Town to continue searching. Why did they leave Anville Town?
-Their waitress suggested they go to another town.
-They already found enough Pinsir's.
-They heard there was better ice cream in Dewford Town.
-They were chasing a Pinsir that ran all the way to Dewford Town.
+Ash has 12 Pokeballs, and 2 backpacks to carry them in. How many Pokeballs go into each bag if he divides them evenly between the two?
+6
+24
+10
+3
+
+Sharpedo is a shark Pokemon. He's got 18 sharp teeth! If they are divided evenly in 2 rows, how many teeth are in each row?
+9
+6
+12
+20
+
+Dodrio is a bird Pokemon with 3 heads! There are 15 feathers total on Dodrio's heads. If the feathers are divided evenly between all 3 heads, how many feathers are on each head?
+5
+4
+12
+6
+
+Dugtrio is 3 separate Diglett Pokemon in one! Dugtrio has 6 eyes total. If the eyes are evenly divided between all 3 Diglett's, how many eyes does each one have?
+2
+3
+4
+6
+
+The word "vegetation" means leafy plants (kind of like "vegetables"). What kind of Pokemon do you think would be the happiest living in a place with a lot of vegetation?
+Grass type
+Fire type
+Psychic type
+Electric type
+
+The word "miniscule" means tiny. Here's a story: Raichu is bigger than Pikachu. Pikachu is excited to evolve, so he can be taller. He's proud that he's a lot bigger than he was when he was just a Pichu though. Since they're all roughly the same size, the difference in height between Pikachu and Raichu seems like a lot to Pikachu. But Snorlax is gigantic, and the differences aren't as noticeable for him. To Snorlax, all three of them look miniscule! How do Pichu, Pikachu, and Raichu look to Snorlax?
+All of them look very small.
+Snorlax thinks Raichu is a lot taller.
+Snorlax thinks they all look orange.
+Snorlax can't see that low to the ground.
+
+The word "wary" means cautious. Here's a story: The friends are searching for Kangaskhan's! They've journeyed to a low prairie filled with tall grass. Kangaskhan's are easily spooked and can start to stampede when frightened, so it's important not to scare them. It's very quiet now, so Brock starts walking quickly and singing to himself. Misty stays wary though. Sure enough, after a few more seconds of walking, a Kangaskhan pops out of the grass in front of them. Misty quickly tosses the Pokeball in her hand at it and catches it! How was Misty prepared to throw the Pokeball so quickly?
+Because she stayed cautious.
+Because Brock's singing helped her focus.
+She was actually aiming at a rock.
+She was tossing it to herself.
