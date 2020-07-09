@@ -1,0 +1,12 @@
+{
+  "name": "pokemon-socket",
+  "description": "Pokemon socket server",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "socket.io": "2.1.0",
+    "socket.io-client": "2.1.0"
+  }
+}
