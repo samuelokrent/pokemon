@@ -22,23 +22,11 @@ It takes 4 weeks to earn a Novice Pokemon Trainer badge. If one week has 7 days,
 49
 24
 
-Ash and Brock are heading to Cinnabar Gym. On the way there, Brock realized he forgot a book that he wanted to bring at home. Brock told Ash to go ahead without him, and that he would meet him at the gym. Ash kept walking, and in a few minutes reached Cinnabar Gym. When he walked in the door, he saw Gary waiting for him. Ash greeted Gary and they began talking about the Pokemon battles they wanted to have. Who got to Cinnabar Gym first?
-Gary
-Ash
-Brock
-Misty
-
 Spynaraks are like spiders - they have 8 eyes! If there are 7 Spynaraks, how many eyes do they have in total?
 56
 49
 59
 48
-
-Do you know how to put a Pokemon to sleep? Pokemon fall asleep when they hear a special lullaby. The lullaby is 10 seconds long. You need to sing it 3 times to get them to fall asleep. How long do you have to sing to put a Pokemon to sleep?
-30 seconds
-10 seconds
-20 seconds
-60 seconds
 
 Bulbasaur is waiting for his next battle, and he's bored! He's watching the second hand go around the clock. If it starts at the top of the clock and moves all the way around the circle back to 12, how many degrees has it rotated through?
 360°
@@ -130,12 +118,6 @@ Water Type
 Grass Type
 Bug Type
 
-The word "expanse" means "a big, open area". Here's a story: Ash is searching for Kabutops. At a gym, another trainer tells him that Kabutops like to graze just beyond a nearby mountain range. So, early the next morning, he climbs one of the mountains in the range. After a long day of hiking, he reaches the top! He looks over the edge at the other side of the mountain, and sees a wide expanse of grass, with plenty of Kabutops running to and fro on it. How would you describe the area of grass that Ash saw?
-Big and open.
-Narrow and closed.
-Hidden from sight.
-Barren and rocky.
-
 Ash has 12 Pokeballs, and 2 backpacks to carry them in. How many Pokeballs go into each bag if he divides them evenly between the two?
 6
 24
@@ -177,3 +159,45 @@ Because she stayed cautious.
 Because Brock's singing helped her focus.
 She was actually aiming at a rock.
 She was tossing it to herself.
+
+Grapploct is an octopus Pokemon. He's very clever, like an octopus, and also has strong suckers on his tentacles that can hold a lot of weight. Since he's shaped like an octopus, he has 8 legs! If there are 9 Grapplocts, how many legs are there total?
+72
+48
+49
+64
+
+Eevee can evolve into 8 different Pokemon! Her evolutions include Leafon, Flareon, Umbreon, and more. Each of them is a different type. That means that when you ask Eevee what she wants to be when she grows up, she has a lot of choices! If you have 8 of each of these 8 Eevee evolutions, how many Pokemon do you have?
+64
+48
+72
+88
+
+A group of 5 Ponyta's is running a relay race, where each Ponyta takes a leg of the race, and all of the legs are the same distance. If the whole relay race is 35 miles long, how many miles is each of the 5 legs?
+7 miles
+10 miles
+30 miles
+6 miles
+
+It takes 21 days for a Bellsprout to evolve into a Weepinbell. During that time, since Bellsprout is a flower Pokemon, it needs to be watered and given a lot of sunlight. Some fertilizer is a good idea too! If one week is 7 days, then how many weeks pass during those 21 days?
+3
+2
+4
+7
+
+The word "reckless" means "dangerous", and is often used to scold someone for not using their head. Here's a story: Misty and Ash are standing on the edge of a cliff overlooking the water with their Pokemon. Suddenly, Ash accidentally drops his hat into the water. It's a long way down! Still, Psyduck jumps over the edge of the cliff and into the water below to fetch it. He grabs the hat in his beak and climbs quickly back up the cliff. At the top he returns the hat to Ash. Everyone is very impressed with Psyduck's bravery. But Misty shakes her head and says, "Psyduck, that was very reckless of you!" How did she feel about Psyduck's actions?
+She felt that Psyduck didn't think through them well enough, and they were too dangerous.
+She was impressed by how brave Psyduck was, like everyone else.
+She thought he had a good idea and wants to jump into the water herself.
+She is confused about how Psyduck climbed the cliff so quickly.
+
+The word "charitable" means "generous", or always willing to share. Here's a story: Sandshrew, Mankee, and Ekans are searching for a special kind of mushroom that's very tasty. They know a lot of these mushrooms grow underground in a certain patch of woods. Sandshrew is a sand type Pokemon and is very good at digging. Mankee is a monkey Pokemon, and Ekans is a snake Pokemon, and neither of them are very good at digging. After an hour of searching, Sandshrew has dug up over 30 mushrooms, while Mankee and Ekans have only found 1 each; they're a little bit disappointed. When Sandshrew hears about his friends' bad luck searching, he splits his mushrooms into three piles and gives Mankee and Ekans a pile each. They thank him happily and they all enjoy their mushrooms together. Who acted charitably in this story?
+Sandshrew, because he shared his mushrooms.
+Mankee, because he climbed trees.
+Ekans, because he didn't find many mushrooms.
+Gary, because he stayed home.
+
+The word "praise" means to give someone encouragement or a compliment. Here's a story: Brock is battling Serena in a Pokemon trainer gym today for an important badge. He arrives at the gym early and goes over the battle plan one more time with each of his Pokemon: Onyx, Vulpix, and Zubat. Soon, the battle starts! After several minutes, it has come down to their final 2 Pokemon. Brock has Zubat, and Serena has Sylveon. Sylveon has a much higher HP than Zubat, so Serena has a big advantage. However, Zubat puts in his very best effort and uses all his cleverness, and in the end beats Sylveon! Brock earns his new badge. After the battle, he picks up Zubat and says, "You did great, Zubat, I'm so proud of you!" Brock and Serena leave the gym and get ice cream with their Pokemon. At what point did Brock praise Zubat?
+Right after they win the battle.
+Right after they arrive at the gym.
+Before the battle starts.
+After they get ice cream.
